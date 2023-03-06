@@ -58,11 +58,11 @@ export default {
 }
 .choose__right-side {
   width: 578px;
-  max-height: 299px;
+  height: 299px;
   box-sizing: border-box;
 }
 .choose__right-side>img {
-  object-fit: contain;
+  object-fit: cover;
 }
 .choose__title {
   font-weight: 700;

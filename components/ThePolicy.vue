@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .policy {
   background-color: #181816;
 }
@@ -83,7 +83,6 @@ export default {
     column-gap: normal;
     padding: 0 0 50px 0;
     flex-wrap: nowrap;
-    justify-content: space-between;
   }
   .text-one {
     width: 156px;

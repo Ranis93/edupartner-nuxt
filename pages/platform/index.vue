@@ -25,7 +25,7 @@
                     class="header__right-block"
                     :class="{'animated pulse': isHovering && hoveringItem === 1}"
                     @mouseover="hoveringOnItem(1)"
-                    @mouseout="noHovering"
+                    @mouseout="noHovering(), selectDefaultItem()"
                   >
                     <nuxt-link to="/license">
                       <div class="header__rb-inner center">
@@ -43,7 +43,7 @@
                     class="header__right-block"
                     :class="{'animated pulse': isHovering && hoveringItem === 2}"
                     @mouseover="hoveringOnItem(2)"
-                    @mouseout="noHovering"
+                    @mouseout="noHovering(), selectDefaultItem()"
                   >
                     <nuxt-link to="/certification">
                       <div class="header__rb-inner sert">
@@ -61,7 +61,7 @@
                     class="header__right-block"
                     :class="{'animated pulse': isHovering && hoveringItem === 3}"
                     @mouseover="hoveringOnItem(3)"
-                    @mouseout="noHovering"
+                    @mouseout="noHovering(), selectDefaultItem()"
                   >
                     <nuxt-link to="/">
                       <div class="header__rb-inner edu">
@@ -417,6 +417,7 @@
 </template>
 
 <script>
+import { dragDropSlider } from '../../assets/js/slider.js'
 import hoveringMixin from '@/components/mixins/hoveringMixin'
 export default {
   name: 'PlatformPage',
@@ -427,6 +428,14 @@ export default {
       isHovering: false,
       hoveringItem: null
     }
+  },
+  mounted () {
+    try {
+      dragDropSlider('.header__slider', '.header__list', '.header__right-blocks', '.header__right-block', '.header__arrows', 3)
+    } catch (error) {}
+    try {
+      dragDropSlider('.slider-one', '.slider-two', '.tariffs-block', '.tariffs-card', '.tariffs-arrows', 3)
+    } catch (error) {}
   }
 }
 </script>

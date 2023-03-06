@@ -54,14 +54,12 @@
 </template>
 
 <script>
-import { dragDropSliderArr } from '../../assets/js/slider.js'
+import { dragDropSliderAlt } from '../../assets/js/slider.js'
 export default {
   mounted () {
     try {
-      dragDropSliderArr('.slider', '.slider-list', '.slider-track', '.slide', '.reviews__slider', 3)
-    } catch (error) {
-      console.log(error)
-    }
+      dragDropSliderAlt('.slider', '.slider-list', '.slider-track', '.slide', '.reviews__slider', 3)
+    } catch (error) {}
   }
 }
 </script>

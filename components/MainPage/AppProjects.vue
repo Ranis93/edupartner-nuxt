@@ -25,7 +25,7 @@
                   class="projects__right-block"
                   :class="{'animated pulse': isHovering && hoveringItem === 1}"
                   @mouseover="hoveringOnItem(1)"
-                  @mouseout="noHovering"
+                  @mouseout="noHovering(), selectDefaultItem()"
                 >
                   <nuxt-link
                     to="/platform"
@@ -45,7 +45,7 @@
                   class="projects__right-block"
                   :class="{'animated pulse': isHovering && hoveringItem === 2}"
                   @mouseover="hoveringOnItem(2)"
-                  @mouseout="noHovering"
+                  @mouseout="noHovering(), selectDefaultItem()"
                 >
                   <nuxt-link
                     to="/license"
@@ -65,7 +65,7 @@
                   class="projects__right-block"
                   :class="{'animated pulse': isHovering && hoveringItem === 3}"
                   @mouseover="hoveringOnItem(3)"
-                  @mouseout="noHovering"
+                  @mouseout="noHovering(), selectDefaultItem()"
                 >
                   <nuxt-link
                     to="/certification"
@@ -114,7 +114,7 @@ export default {
 .projects {
   margin: 0;
   width: 100%;
-  height: 100vh;
+  height: 850px;
   background: #1D1D1D;
   position: relative;
 }
@@ -127,8 +127,8 @@ export default {
   justify-content: center;
   column-gap: 50px;
   position: absolute;
-  top: 50vh;
-  left: 50vw;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin: 100px 0;
 }

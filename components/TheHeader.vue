@@ -2,12 +2,14 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <div class="header__logo">
-          <img
-            src="../assets/images/main-page/edupartner-footer.svg"
-            alt="edu_header"
-          >
-        </div>
+        <nuxt-link to="/">
+          <div class="header__logo">
+            <img
+              src="../assets/images/main-page/edupartner-footer.svg"
+              alt="edu_header"
+            >
+          </div>
+        </nuxt-link>
         <div class="header__list">
           <a class="underline underline_a" href="#!"> Обучение </a>
           <a href="#!"> Управление </a>

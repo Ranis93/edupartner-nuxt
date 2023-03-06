@@ -236,7 +236,8 @@ export default {}
 
   .footer__right {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
+    column-gap: 38px;
   }
 
   .col-2 {
@@ -259,7 +260,9 @@ export default {}
     column-gap: 15px;
     justify-content: space-between;
   }
-
+  .footer__right{
+    column-gap: 15px;
+  }
   .footer__title {
     font-size: 16px;
     line-height: 20px;

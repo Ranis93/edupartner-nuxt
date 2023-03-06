@@ -1,0 +1,380 @@
+<template>
+  <section class="BMMain">
+    <div class="container">
+      <div class="BMMain__inner">
+        <div class="BMMain__desc">
+          <div class="BMMain__title">
+            <span>Курсы</span> по бизнесу и управлению
+          </div>
+          <div class="BMMain__text">
+            От преподавателей с опытом <br> в управлении более 15 лет
+          </div>
+        </div>
+        <div class="BMMain__content">
+          <div class="BMMain__slider">
+            <div class="BMMain__list">
+              <div class="BMMain__track">
+                <div class="BMMain__slide">
+                  <div class="BMMain__card">
+                    <div class="BMMain__name">
+                      Мещерякова Наталья Анатольевна
+                    </div>
+                    <ul class="BMMain__about">
+                      <li>
+                        Опыт работы директором автошколы
+                      </li>
+                      <li>
+                        Директор учебного центра
+                      </li>
+                    </ul>
+                    <div class="BMMain__img first">
+                      <img src="../../../assets/images/courses/business-and-management/na.png" alt="BMMain__img">
+                    </div>
+                  </div>
+                </div>
+                <div class="BMMain__slide">
+                  <div class="BMMain__card">
+                    <div class="BMMain__name">
+                      Игина Марина Аркадьевна
+                    </div>
+                    <ul class="BMMain__about">
+                      <li>
+                        Опыт работы генеральным директором по производству и оптово — розничной торговли продуктов питания
+                      </li>
+                      <li>
+                        Главный экономист холдинга по производству и реализации товаров
+                      </li>
+                      <li>
+                        Собственник бизнеса в фитнес-индустрии и консалтинговой компании «БИЗНЕС МЕТОDИКА»
+                      </li>
+                    </ul>
+                    <div class="BMMain__img second">
+                      <img src="../../../assets/images/courses/business-and-management/igina_ma.png" alt="BMMain__img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="BMMain__arrows">
+            <button
+              class="BMMain__arrow-prev prev disabled"
+            />
+            <button type="button" class="BMMain__arrow-next next" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import { dragDropSlider } from '../../../assets/js/slider'
+export default {
+  mounted () {
+    try {
+      dragDropSlider(
+        '.BMMain__slider',
+        '.BMMain__list',
+        '.BMMain__track',
+        '.BMMain__slide',
+        '.BMMain__arrows',
+        2
+      )
+    } catch (error) {}
+  }
+
+}
+</script>
+
+<style scoped>
+.BMMain {
+  width: 100vw;
+  background-image: url('../../../assets/images/courses/business-and-management/b-a-m__bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.BMMain__inner {
+  padding: 196px 0 0 0;
+  display: flex;
+  column-gap: 20px;
+}
+.BMMain__desc{
+  max-width: 478px;
+}
+
+.BMMain__text {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #B2B3B1;
+  max-width: 540px;
+}
+
+.BMMain__title {
+  padding: 34px 0 25px 0;
+  max-width: 678px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  color: #FFFFFF;
+}
+
+.BMMain__title>span {
+  color: rgba(250, 255, 0, 1);
+}
+.BMMain__content{
+  position: relative;
+}
+.BMMain__slider {
+  margin-top: 41px;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  width: 680px;
+  overflow: hidden;
+  /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+  user-select: none;
+  /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+  touch-action: pan-y;
+}
+/* Если где-то внутри слайдера будут изображения,
+то нужно задать им pointer-events: none,
+чтобы они не перетаскивались мышью */
+
+.BMMain__slider img {
+  pointer-events: none;
+}
+.BMMain__list {
+  width: 680px;
+  height: 654px;
+  overflow: hidden;
+}
+.BMMain__list.grab {
+  cursor: grab;
+}
+.BMMain__list.grabbing {
+  cursor: grabbing;
+}
+.BMMain__slide {
+  width: 680px;
+  height: 654px;
+  padding-right: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  box-sizing: content-box;
+  position: relative;
+}
+.BMMain__track {
+  display: flex;
+}
+.BMMain__arrows {
+  position: absolute;
+  left: 0;
+  bottom: 182px;
+  width: fit-content;
+}
+.BMMain__arrow-prev,
+.BMMain__arrow-next {
+  width: 80px;
+  height: 70px;
+  padding: 0;
+
+  background-position: center center;
+  background-color: transparent;
+  border: 0;
+}
+.BMMain__arrow-prev {
+  background-image: url("../../../assets/images/courses/business-and-management/arr_prev.svg");
+}
+.BMMain__arrow-next {
+  background-image: url("../../../assets/images/courses/business-and-management/arr_next.svg");
+  margin-left: 25px;
+}
+.BMMain__arrow-next.disabled,
+.BMMain__arrow-prev.disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+.BMMain__center {
+  display: inline-block;
+}
+.BMMain__card {
+  width: 680px;
+  height: 382px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background: linear-gradient(122.93deg, rgba(100, 100, 100, 0.71) 1.7%, rgba(72, 71, 71, 0.12) 48.4%, rgba(115, 106, 106, 0.17) 94.76%);
+  border-radius: 50px;
+  padding: 50px 30px 0 30px;
+}
+.BMMain__name{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFF400;
+  padding-bottom: 20px;
+}
+.BMMain__about{
+  margin-left: 30px;
+  max-width: 350px;
+
+  color: #D4D4D4;
+}
+.BMMain__about>li{
+  padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.BMMain__img{
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.BMMain__img.first{
+  height: 543px;
+}
+.BMMain__img.second{
+  height: 539px;
+}
+@media (max-width: 1024px) {
+  .BMMain__inner {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 230px;
+  }
+  .BMMain__title{
+    padding-top: 0;
+  }
+  .BMMain__content{
+    align-self: flex-end;
+  }
+  .BMMain__slider{
+    margin-top: 0;
+  }
+  .BMMain__slider, .BMMain__list, .BMMain__slide, .BMMain__card{
+    width: 633px;
+  }
+  .BMMain__slider, .BMMain__list, .BMMain__slide{
+    height: 603px;
+  }
+  .BMMain__arrows{
+    bottom: 111px;
+  }
+  .BMMain__img.second{
+    height: 463px;
+  }
+}
+@media (max-width: 768px) {
+  .BMMain {
+    background-position: 40% 100%;
+  }
+  .BMMain__inner {
+    row-gap: 43px;
+  }
+  .BMCards__inner, .BMMain__slider, .BMMain__list, .BMMain__slide, .BMMain__card{
+    width: 603px;
+  }
+  .BMMain__slider, .BMMain__list, .BMMain__slide{
+    height: 572px;
+  }
+  .BMMain__card{
+    height: 351px;
+  }
+}
+@media (max-width: 660px) {
+  .BMMain__slider, .BMMain__list, .BMMain__slide, .BMMain__card{
+    width: 440px;
+  }
+  .BMMain__img.first{
+    height: 445px;
+  }
+  .BMMain__img.second{
+    height: 357px;
+  }
+}
+@media (max-width: 480px) {
+  .BMMain {
+    background-position: 30% 100%;
+  }
+  .BMMain__title {
+    font-size: 36px;
+    line-height: 50px;
+    padding-bottom: 35px;
+  }
+  .BMMain__inner{
+    row-gap: 40px;
+  }
+  .BMMain__slider, .BMMain__list, .BMMain__slide{
+    height: 575px;
+  }
+  .BMMain__slider, .BMMain__list, .BMMain__slide, .BMMain__card{
+    width: 90vw;
+  }
+  .BMMain__card{
+    padding: 40px 20px 0 20px;
+  }
+  .BMMain__about{
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .BMMain__about>li{
+    padding-bottom: 5px;
+  }
+  .BMMain__arrow-prev, .BMMain__arrow-next{
+    width: 64px;
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    margin-left: 0;
+  }
+}
+@media (max-width: 360px) {
+  .BMMain__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .BMMain__title {
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+  .BMMain__card{
+    padding-top: 20px;
+  }
+  .BMMain__name{
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 15px;
+  }
+  .BMMain__about{
+    margin-left: 15px;
+  }
+  .BMMain__about>li{
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .BMMain__slider, .BMMain__list, .BMMain__slide{
+    height: 572px;
+  }
+  .BMMain__img.first{
+    height: 376px;
+  }
+  .BMMain__img.second{
+    height: 305px;
+  }
+  .BMMain__arrows{
+    display: none;
+  }
+
+}
+</style>

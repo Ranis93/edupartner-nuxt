@@ -1,36 +1,36 @@
-window.addEventListener('DOMContentLoaded', () => { 
-    // click to projects cards
-    document.querySelectorAll('.header__right-block').forEach((item, i) => {
-        item.addEventListener('click', () => {
-            //event.preventDefault();
-            switch(item.id) {
-                case 'header__right-platform':
-                    document.location.href = '../platform/';
-                break;              
-                case 'header__right-center':
-                    document.location.href = '../license/';
-                break;
-                case 'header__right-sert':
-                    document.location.href = '../certification/';
-                break;            
-                default:
-                    document.location.href = '../';
-                break;
-              } 
+// window.addEventListener('DOMContentLoaded', () => { 
+//     // click to projects cards
+//     document.querySelectorAll('.header__right-block').forEach((item, i) => {
+//         item.addEventListener('click', () => {
+//             //event.preventDefault();
+//             switch(item.id) {
+//                 case 'header__right-platform':
+//                     document.location.href = '../platform/';
+//                 break;              
+//                 case 'header__right-center':
+//                     document.location.href = '../license/';
+//                 break;
+//                 case 'header__right-sert':
+//                     document.location.href = '../certification/';
+//                 break;            
+//                 default:
+//                     document.location.href = '../';
+//                 break;
+//               } 
             
-        });
-    });
+//         });
+//     });
 
 
-// Мигание главных переключателей страницы при наведении
+// // Мигание главных переключателей страницы при наведении
 
-$('.header__right-block').hover(
+// $('.header__right-block').hover(
 
-  function(){ $(this).addClass('animated pulse') },
+//   function(){ $(this).addClass('animated pulse') },
 
-  function(){ $(this).removeClass('animated pulse') }
+//   function(){ $(this).removeClass('animated pulse') }
 
-)
+// )
 
 
 
@@ -96,37 +96,37 @@ try {
   }
 } catch(e) {}
 
-// карточки при наведении
-try {
-  const cards = document.querySelectorAll('.tariffs-card');
-  cards.forEach((card, id) => {
-    card.addEventListener('mouseover', () => {
-      cards.forEach(item=> {
-        item.classList.remove('active', 'animated', 'pulse')
-      })
-      card.classList.add('active', 'animated', 'pulse')
-      i = id
-    })
-  })
-} catch(e) {}
+// // карточки при наведении
+// try {
+//   const cards = document.querySelectorAll('.tariffs-card');
+//   cards.forEach((card, id) => {
+//     card.addEventListener('mouseover', () => {
+//       cards.forEach(item=> {
+//         item.classList.remove('active', 'animated', 'pulse')
+//       })
+//       card.classList.add('active', 'animated', 'pulse')
+//       i = id
+//     })
+//   })
+// } catch(e) {}
 
-// Лицензии, аккредитации, соглашения при наведении
-try {
-  const licenseBtns = document.querySelectorAll('.docs_left-btn');
-  const licenseImages = document.querySelectorAll('.docs_right-img');
-  let numm = 0;
-  licenseImages[numm].classList.add('active', 'animated', 'pulse');
+// // Лицензии, аккредитации, соглашения при наведении
+// try {
+//   const licenseBtns = document.querySelectorAll('.docs_left-btn');
+//   const licenseImages = document.querySelectorAll('.docs_right-img');
+//   let numm = 0;
+//   licenseImages[numm].classList.add('active', 'animated', 'pulse');
 
-  licenseBtns.forEach((licenseBtn, num) => {
-    licenseBtn.addEventListener('mouseover', () => {
-      licenseImages.forEach(item=> {
-        item.classList.remove('active', 'animated', 'pulse')
-      })
-      numm = num
-      licenseImages[numm].classList.add('active', 'animated', 'pulse')      
-    })
-  })
-} catch(e) {}
+//   licenseBtns.forEach((licenseBtn, num) => {
+//     licenseBtn.addEventListener('mouseover', () => {
+//       licenseImages.forEach(item=> {
+//         item.classList.remove('active', 'animated', 'pulse')
+//       })
+//       numm = num
+//       licenseImages[numm].classList.add('active', 'animated', 'pulse')      
+//     })
+//   })
+// } catch(e) {}
 
 
 // All Drag-n-Drop SLIDERS 
@@ -317,17 +317,17 @@ function dragDropSlider(windowParent, window, slideItemsTrack, slideItem, arrows
   });
 
 }
-try {  
-  dragDropSlider('.slider-one', '.slider-two', '.tariffs-block', '.tariffs-card', '.tariffs-arrows');
-} catch (error) {}
-try {
-  dragDropSlider('.slider', '.slider-list', '.slider-track', '.slide', '.slider-arrows');
-} catch (error) {}
-try {
+// try {  
+//   dragDropSlider('.slider-one', '.slider-two', '.tariffs-block', '.tariffs-card', '.tariffs-arrows');
+// } catch (error) {}
+// try {
+//   dragDropSlider('.slider', '.slider-list', '.slider-track', '.slide', '.slider-arrows');
+// } catch (error) {}
+// try {
   
-} catch (error) {  
-}
-dragDropSlider('.header__slider', '.header__list', '.header__right-blocks', '.header__right-block', '.header__arrows');
+// } catch (error) {  
+// }
+// dragDropSlider('.header__slider', '.header__list', '.header__right-blocks', '.header__right-block', '.header__arrows');
 
-});
+
 

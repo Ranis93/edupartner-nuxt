@@ -28,7 +28,7 @@
                     class="header__right-block"
                     :class="{'animated pulse': isHovering && hoveringItem === 1}"
                     @mouseover="hoveringOnItem(1)"
-                    @mouseout="noHovering"
+                    @mouseout="noHovering(), selectDefaultItem()"
                   >
                     <nuxt-link to="/certification">
                       <div class="header__rb-inner sert">
@@ -46,7 +46,7 @@
                     class="header__right-block"
                     :class="{'animated pulse': isHovering && hoveringItem === 2}"
                     @mouseover="hoveringOnItem(2)"
-                    @mouseout="noHovering"
+                    @mouseout="noHovering(), selectDefaultItem()"
                   >
                     <nuxt-link to="/">
                       <div class="header__rb-inner edu">
@@ -61,7 +61,7 @@
                     class="header__right-block"
                     :class="{'animated pulse': isHovering && hoveringItem === 3}"
                     @mouseover="hoveringOnItem(3)"
-                    @mouseout="noHovering"
+                    @mouseout="noHovering(), selectDefaultItem()"
                   >
                     <nuxt-link to="/platform">
                       <div class="header__rb-inner platform">
@@ -328,36 +328,56 @@
         </h2>
         <div class="docs_inner">
           <div class="docs_left">
-            <button class="docs_left-btn">
+            <button
+              class="docs_left-btn"
+              @mouseover="hoveringOnItem(11)"
+              @mouseout="noHovering"
+            >
               Образовательная лицензия
             </button>
-            <button class="docs_left-btn">
+            <button
+              class="docs_left-btn"
+              @mouseover="hoveringOnItem(12)"
+              @mouseout="noHovering"
+            >
               Аккредитация РосНефть
             </button>
-            <button class="docs_left-btn">
+            <button
+              class="docs_left-btn"
+              @mouseover="hoveringOnItem(13)"
+              @mouseout="noHovering"
+            >
               Аккредитация Минтранса
             </button>
-            <button class="docs_left-btn">
+            <button
+              class="docs_left-btn"
+              @mouseover="hoveringOnItem(14)"
+              @mouseout="noHovering"
+            >
               Система добровольной сертификации
             </button>
           </div>
           <div class="docs_right">
             <img
+              v-show="hoveringItem == 11"
               src="../../assets/images/license-page/lic_center.png"
               alt="Лицензия"
               class="docs_right-img"
             >
             <img
+              v-show="hoveringItem == 12"
               src="../../assets/images/license-page/accredit_rosneft.png"
               alt="РосНефть"
               class="docs_right-img"
             >
             <img
+              v-show="hoveringItem == 13"
               src="../../assets/images/license-page/accredit_mintrans.jpg"
               alt="Минтранс"
               class="docs_right-img"
             >
             <img
+              v-show="hoveringItem == 14"
               src="../../assets/images/license-page/letter_rosstandart.jpg"
               alt="Росстандарт"
               class="docs_right-img"
@@ -550,11 +570,20 @@
 </template>
 
 <script>
+import { dragDropSlider } from '../../assets/js/slider.js'
 import hoveringMixin from '@/components/mixins/hoveringMixin'
 export default {
   name: 'LicensePage',
   mixins: [hoveringMixin],
-  layout: 'emptyLt'
+  layout: 'emptyLt',
+  mounted () {
+    try {
+      dragDropSlider('.header__slider', '.header__list', '.header__right-blocks', '.header__right-block', '.header__arrows', 3)
+    } catch (error) {}
+    try {
+      dragDropSlider('.slider', '.slider-list', '.slider-track', '.slide', '.slider-arrows', 5)
+    } catch (error) {}
+  }
 }
 </script>
 
@@ -1011,7 +1040,6 @@ margin-bottom: 30px;
   background-color:#0967A1;
 }
 .docs_right-img{
-  display: none;
   max-width: 371px;
   margin-right: auto;
 }

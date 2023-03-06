@@ -43,13 +43,15 @@
             </div>
           </div>
           <div class="directions__card four">
-            <div class="directions__img">
-              <img
-                src="../../assets/images/main-page/cards-img-04.png"
-                alt="cards-img-04"
-              >
-              <span class="mask" />
-            </div>
+            <nuxt-link to="/courses/business-and-management">
+              <div class="directions__img">
+                <img
+                  src="../../assets/images/main-page/cards-img-04.png"
+                  alt="cards-img-04"
+                >
+                <span class="mask" />
+              </div>
+            </nuxt-link>
             <div class="directions__text">
               Курсы по бизнесу и управлению
             </div>

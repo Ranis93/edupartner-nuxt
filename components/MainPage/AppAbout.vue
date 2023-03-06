@@ -125,7 +125,6 @@ export default {}
 .about {
   position: relative;
   width: 100vw;
-  min-height: 100vh;
   padding-bottom: 150px;
   background-color: #181816;
 }
