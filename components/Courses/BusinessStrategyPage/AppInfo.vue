@@ -29,7 +29,7 @@
                 Длительность
               </div>
               <div class="BSInfo__text">
-                Суббота, воскресенье 10:00-19:00
+                Суббота, воскресенье <br> 10:00-19:00
               </div>
             </span>
           </li>
@@ -121,6 +121,15 @@ export default {
   color: #1D1D1D;
 }
 @media (max-width: 1024px) {
+  .BSInfo__inner{
+    padding-bottom: 100px;
+  }
+  .BSInfo__link{
+    padding-top: 70px;
+  }
+  .BSInfo__text{
+    max-width: 225px;
+  }
 }
 @media (max-width: 768px) {
 }

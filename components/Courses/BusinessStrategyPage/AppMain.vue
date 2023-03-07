@@ -114,6 +114,15 @@ export default {
   max-width: 678px;
 }
 @media (max-width: 1024px) {
+  .BSMain__inner{
+    padding-bottom: 157px;
+  }
+  .BSMain__title, .BSMain__text{
+    font-size: 55px;
+  }
+  .BSMain__desc{
+    margin-top: 20px;
+  }
 }
 @media (max-width: 768px) {
 }

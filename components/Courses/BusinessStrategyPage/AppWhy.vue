@@ -84,6 +84,7 @@ export default {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 50px;
+  column-gap: 20px;
 }
 .BSWhy__cards{
   max-width: 480px;
@@ -129,8 +130,13 @@ export default {
 .BSWhy__ad:last-child{
   padding-bottom: 0;
 }
-
 @media (max-width: 1024px) {
+  .BSWhy__cards{
+    max-width: 416px;
+  }
+  .BSWhy__col{
+    max-width: 524px;
+  }
 }
 @media (max-width: 768px) {
 }

@@ -189,6 +189,7 @@ export default {
   background-position: center center;
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 }
 .BMMain__arrow-prev {
   background-image: url("../../../assets/images/courses/business-and-management/arr_prev.svg");

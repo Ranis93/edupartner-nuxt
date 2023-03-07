@@ -97,6 +97,13 @@ export default {
   color: #898989;
 }
 @media (max-width: 1024px) {
+  .BSLetter__inner{
+    padding-bottom: 100px;
+    column-gap: 20px;
+  }
+  .BSLetter__about{
+    max-width: 633px;
+  }
 }
 @media (max-width: 768px) {
 }

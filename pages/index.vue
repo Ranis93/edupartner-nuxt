@@ -22,6 +22,9 @@ import AppChoose from '~/components/MainPage/AppChoose.vue'
 import AppProjects from '~/components/MainPage/AppProjects.vue'
 export default {
   name: 'IndexPage',
-  components: { AppSpace, AppDirections, AppAbout, AppProgress, AppControl, AppReviews, AppChoose, AppProjects }
+  components: { AppSpace, AppDirections, AppAbout, AppProgress, AppControl, AppReviews, AppChoose, AppProjects },
+  beforeMount () {
+    this.$store.commit('bredcrumbs/hideBredcrumb')
+  }
 }
 </script>

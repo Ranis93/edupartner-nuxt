@@ -96,6 +96,12 @@ export default {
   margin-top: -15px;
 }
 @media (max-width: 1024px) {
+  .BSResult__text{
+    font-size: 18px;
+  }
+  .BSResult__card::before{
+    margin-top: -20px;
+  }
 }
 @media (max-width: 768px) {
 }

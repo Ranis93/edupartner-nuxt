@@ -21,12 +21,6 @@ export const getters = {
   },
   getCurrentBredcrumb_3 (state) {
     return state.currentBredcrumbs.values[2]
-  },
-  getBgColor (state) {
-    if (state.currentBredcrumbs.values[1] === 'История компании') {
-      return true
-    }
-    return false
   }
 }
 
