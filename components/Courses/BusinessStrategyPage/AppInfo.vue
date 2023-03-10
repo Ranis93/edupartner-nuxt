@@ -132,11 +132,52 @@ export default {
   }
 }
 @media (max-width: 768px) {
+  .BSInfo__inner{
+    padding-bottom: 70px;
+  }
+  .BSInfo__title{
+    font-size: 22px;
+  }
+  .BSInfo__text{
+    font-size: 22px;
+  }
+  .BSInfo__text{
+    max-width: 133px;
+  }
 }
-
 @media (max-width: 480px) {
+  .BSInfo__inner{
+    padding: 100px 0;
+  }
+  .BSInfo__content{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 50px;
+    column-gap: 30px;
+  }
+  .BSInfo__content>li{
+    margin-left: 20px;
+  }
 }
 @media (max-width: 360px) {
-
+  .BSInfo__content{
+    justify-content: space-between;
+    row-gap: 35px;
+  }
+  .BSInfo__title{
+    font-size: 20px;
+  }
+  .BSInfo__text{
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .BSInfo__link{
+    padding-top: 50px;
+  }
+  .BSInfo__btn{
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 </style>

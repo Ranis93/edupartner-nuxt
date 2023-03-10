@@ -208,12 +208,24 @@ export default {
     padding-right: 15%;
   }
 }
-@media (max-width: 768px) {
-}
-@media (max-width: 660px) {
-}
 @media (max-width: 480px) {
+  .BSReviews__slide{
+    width: 100%;
+  }
 }
 @media (max-width: 360px) {
+  .BSReviews__slider{
+    padding-top: 50px;
+  }
+  .BSReviews__img{
+    width: 87px;
+    height: 87px;
+  }
+  .BSReviews__text{
+    padding: 55px 41px 15px 14px;
+  }
+  .BSReviews__name{
+    padding: 0 41px 40px 14px;
+  }
 }
 </style>

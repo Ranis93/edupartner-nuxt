@@ -10,7 +10,7 @@
             Я открыла первый бизнес в 2008 году. Про сложности, которые встречались на пути с того времени и до недавних пор можно написать целую книгу. 99,9% предпринимателей добиваются успеха в бизнесе через пот и кровь, а можно и без этого! Несмотря на множество прочитанных книг (которые тоже в какой-то мере помогли), большую роль при решении проблем все равно играл опыт.
           </div>
           <div class="BSLetter__desc">
-            Если бы у меня была возможность посетить курс по бизнес-стратегии 10 лет назад, количество шишек на голове изрядно бы поубавилось.
+            <strong>Если бы у меня была возможность посетить курс по бизнес-стратегии 10 лет назад, количество шишек на голове изрядно бы поубавилось.</strong>
           </div>
         </div>
         <div class="BSLetter__author">
@@ -106,11 +106,44 @@ export default {
   }
 }
 @media (max-width: 768px) {
+  .BSLetter__inner{
+    padding-top: 100px;
+  }
+  .BSLetter__symbols{
+    padding-top: 0;
+  }
+  .BSLetter__author{
+    padding-top: 61px;
+    flex-shrink: 0;
+    max-width: 229px;
+  }
+  .BSLetter__about{
+    max-width: none;
+  }
+  .BSLetter__name, .BSLetter__position{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .BSLetter__name{
+    padding-bottom: 10px;
+  }
 }
 
 @media (max-width: 480px) {
+  .BSLetter__inner{
+    column-gap: normal;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .BSLetter__author{
+    align-self: flex-end;
+    padding-top: 0;
+  }
 }
 @media (max-width: 360px) {
-
+  .BSLetter__desc{
+    font-size: 18px;
+  }
 }
 </style>

@@ -68,7 +68,6 @@ export default {}
 
 <style scoped>
 .directions {
-  width: 100vw;
   background: #181816;
 }
 .directions__inner {

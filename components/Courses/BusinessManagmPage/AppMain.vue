@@ -89,7 +89,6 @@ export default {
 
 <style scoped>
 .BMMain {
-  width: 100vw;
   background-image: url('../../../assets/images/courses/business-and-management/b-a-m__bg.png');
   background-repeat: no-repeat;
   background-position: center;

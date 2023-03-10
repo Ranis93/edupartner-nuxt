@@ -166,11 +166,64 @@ export default {
   }
 }
 @media (max-width: 768px) {
+  .BSTeacher__box{
+    padding: 10px 42px 366px 18px;
+  }
+  .BSTeacher__desc.second{
+    max-width: none;
+  }
+  .BSTeacher__img{
+    right: 43px;
+    width: 311px;
+    height: 349px;
+  }
 }
 
 @media (max-width: 480px) {
+  .BSTeacher__inner{
+    padding-bottom: 55px;
+  }
+  .BSTeacher__title{
+    margin-bottom: 55px;
+  }
+  .BSTeacher__box{
+    padding: 25px 30px 309px 30px;
+  }
+  .BSTeacher__text{
+    margin-top: 20px;
+  }
+  .BSTeacher__img{
+    width: 275px;
+    height: 309px;
+    right: 38px;
+  }
+  .BSTeacher__link{
+    margin: 45px auto 0 auto;
+  }
 }
 @media (max-width: 360px) {
-
+  .BSTeacher__inner{
+    padding-bottom: 100px;
+  }
+  .BSTeacher__title{
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .BSTeacher__box{
+    padding: 25px 20px 304px 20px;
+  }
+  .BSTeacher__desc.second>li{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .BSTeacher__img{
+    width: 249px;
+    height: 279px;
+    right: 35px;
+  }
+  .BSTeacher__btn{
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 </style>

@@ -1,7 +1,9 @@
 <template>
   <div class="appMain">
     <TheHeader />
-    <TheBredcrumbs />
+    <div class="container">
+      <TheBredcrumbs />
+    </div>
     <Nuxt />
     <TheFooter />
     <ThePolicy />
@@ -23,4 +25,13 @@ export default {
 }
 </script>
 <style>
+.appMain>.container{
+  position: relative;
+  overflow-x: scroll;
+}
+@media (max-width: 480px) {
+  .appMain>.container{
+    position: static;
+  }
+}
 </style>

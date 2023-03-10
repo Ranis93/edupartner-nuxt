@@ -69,32 +69,32 @@ if(animItems.length > 0) {
 
 
 // карточки переключатель
-let i = 1;
-try {
-  const cards = document.querySelectorAll('.tariffs-card');
-  const right = document.querySelector('.tariffs-arrow-right');
-  const left = document.querySelector('.tariffs-arrow-left');
+// let i = 1;
+// try {
+//   const cards = document.querySelectorAll('.tariffs-card');
+//   const right = document.querySelector('.tariffs-arrow-right');
+//   const left = document.querySelector('.tariffs-arrow-left');
   
-  right.addEventListener('click', () => {
-    i++
-    removeClass()  
-    if(i===3) {i = 0}
-    cards[i].classList.add('active', 'animated', 'pulse')
-  })
+//   right.addEventListener('click', () => {
+//     i++
+//     removeClass()  
+//     if(i===3) {i = 0}
+//     cards[i].classList.add('active', 'animated', 'pulse')
+//   })
 
-  left.addEventListener('click', () => {
-    i--
-    removeClass()  
-    if(i===-1) {i = 2}
-    cards[i].classList.add('active', 'animated', 'pulse')
-  })
+//   left.addEventListener('click', () => {
+//     i--
+//     removeClass()  
+//     if(i===-1) {i = 2}
+//     cards[i].classList.add('active', 'animated', 'pulse')
+//   })
 
-  function removeClass() {
-    cards.forEach(card => {
-      card.classList.remove('active', 'animated', 'pulse')  
-    })
-  }
-} catch(e) {}
+//   function removeClass() {
+//     cards.forEach(card => {
+//       card.classList.remove('active', 'animated', 'pulse')  
+//     })
+//   }
+// } catch(e) {}
 
 // // карточки при наведении
 // try {

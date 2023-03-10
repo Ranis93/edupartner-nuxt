@@ -192,11 +192,64 @@ export default {
   }
 }
 @media (max-width: 768px) {
-}
-@media (max-width: 660px) {
+  .BSHow__slide{
+    column-gap: 20px;
+  }
+  .BSHow__img{
+    width: 47%;
+  }
+  .BSHow__img>img{
+    object-fit: cover;
+  }
+  .BSHow__text{
+    width: 49%;
+    max-width: none;
+    font-size: 20px;
+    padding-right: 20px;
+  }
+  .BSHow__arrows{
+    right: 25%;
+  }
 }
 @media (max-width: 480px) {
+  .BSHow__slide{
+    flex-wrap: wrap;
+  }
+  .BSHow__img{
+    width: 100%;
+    height: 350px;
+  }
+  .BSHow__text{
+    width: 100%;
+    padding: 30px 0 0 0;
+  }
+  .BSHow__list, .BSHow__slide{
+    height: auto;
+  }
+  .BSHow__arrows{
+    position: static;
+    padding: 20px 0 36px 0;
+    margin: auto;
+  }
 }
 @media (max-width: 360px) {
+  .BSHow__inner{
+    padding-top: 66px;
+  }
+  .BSHow__title{
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .BSHow__img{
+    height: 270px;
+  }
+  .BSHow__text{
+    padding-top: 35px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .BSHow__arrows{
+    padding: 15px 0;
+  }
 }
 </style>

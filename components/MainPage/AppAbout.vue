@@ -124,7 +124,6 @@ export default {}
 <style scoped>
 .about {
   position: relative;
-  width: 100vw;
   padding-bottom: 150px;
   background-color: #181816;
 }

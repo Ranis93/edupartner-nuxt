@@ -29,7 +29,6 @@ export default {}
 
 <style>
 .space {
-  width: 100vw;
   background-image: url('../../assets/images/main-page/bg-rocket-earth.png');
   background-repeat: no-repeat;
   background-position: center;

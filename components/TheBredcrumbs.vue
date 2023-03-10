@@ -87,19 +87,17 @@ export default {
 
 <style scoped>
 .bredcrumbs {
-  padding: 20px 0;
   overflow-x: scroll;
-  position: relative;
   z-index: 1;
   position: absolute;
   top: 135px;
 }
+.bredcrumbs>.container{
+  padding-left: 0;
+}
 .bredcrumbs::-webkit-scrollbar {
   width: 0;
   height: 0;
-}
-.bredcrumbs.gray {
-  background-color: rgba(209, 199, 180, 0.84);
 }
 .bredcrumbs__list {
   width: fit-content;
@@ -126,6 +124,9 @@ export default {
   color: #D4D4D4;
 }
 @media (max-width: 480px) {
+  .bredcrumbs{
+    width: 90vw;
+  }
   .bredcrumbs__list {
     align-items: flex-start;
   }

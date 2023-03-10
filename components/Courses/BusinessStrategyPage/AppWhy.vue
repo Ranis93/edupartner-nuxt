@@ -139,11 +139,42 @@ export default {
   }
 }
 @media (max-width: 768px) {
+  .BSWhy__ad{
+    font-size: 20px;
+  }
+  .BSWhy__cards, .BSWhy__col{
+    max-width: none;
+    width: 48%;
+  }
 }
-
 @media (max-width: 480px) {
+  .BSWhy__content{
+    flex-wrap: wrap;
+    column-gap: normal;
+    row-gap: 50px;
+  }
+  .BSWhy__cards, .BSWhy__col{
+    width: 100%;
+  }
+  .BSWhy__window{
+    margin-top: 0;
+    padding: 35px 45px;
+  }
 }
 @media (max-width: 360px) {
-
+  .BSWhy__title{
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .BSWhy__text{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .BSWhy__window{
+    padding: 35px 32px;
+  }
+  .BSWhy__ad{
+    font-size: 18px;
+  }
 }
 </style>

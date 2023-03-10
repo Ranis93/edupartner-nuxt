@@ -23,6 +23,18 @@ import AppProjects from '~/components/MainPage/AppProjects.vue'
 export default {
   name: 'IndexPage',
   components: { AppSpace, AppDirections, AppAbout, AppProgress, AppControl, AppReviews, AppChoose, AppProjects },
+  head () {
+    return {
+      title: 'EduPartner✅ Система Сертификации для негосударственных судебных экспертов',
+      meta: [
+        {
+          hid: 'Главная',
+          name: 'description',
+          content: 'Автоматизированная Система Сертификации для негосударственных судебных экспертов разработана в 2020 в период пандемии для уменьшения стоимости и сокращения сроков сертификации от 10 мин до 2 часов с учётом оплаты, загрузки документов и формирования сертификата для скачивания в личном кабинете'
+        }
+      ]
+    }
+  },
   beforeMount () {
     this.$store.commit('bredcrumbs/hideBredcrumb')
   }

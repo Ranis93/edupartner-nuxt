@@ -192,11 +192,73 @@ export default {
   }
 }
 @media (max-width: 768px) {
+  .BSPrice__btn1, .BSPrice__btn2{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .BSPrice__inner{
+    column-gap: 10px;
+  }
+  .BSPrice__info{
+    width: 49%;
+  }
+  .BSPrice__window{
+    padding-right: 10px;
+  }
+  .BSPrice__img{
+    height: 90px;
+    padding-bottom: 15px;
+  }
 }
 
 @media (max-width: 480px) {
+  .BSPrice__inner{
+    padding: 100px 0 78px 0;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+  .BSPrice__info, .BSPrice__box{
+    width: 100%;
+  }
+  .BSPrice__info>a{
+    margin: 25px auto 0 auto;
+  }
+  .BSPrice__window{
+    padding: 45px 34px 40px 48px;
+  }
+  .BSPrice__text.second{
+    padding-bottom: 40px;
+  }
+  .BSPrice__img{
+    height: auto;
+  }
 }
 @media (max-width: 360px) {
-
+  .BSPrice__about>li{
+    font-size: 18px;
+  }
+  .BSPrice__info>a{
+    width: 100%;
+  }
+  .BSPrice__btn1{
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .BSPrice__window{
+    padding: 45px 20px 39px 20px;
+  }
+  .BSPrice__text.first{
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 25px;
+  }
+  .BSPrice__text.second{
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+  .BSPrice__img{
+    padding-bottom: 25px;
+  }
 }
 </style>

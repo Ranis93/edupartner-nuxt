@@ -73,7 +73,7 @@ export default {
   row-gap: 25px;
 }
 .BSResult__card{
-  width: 32.3%;
+  width: 32%;
   padding: 35px 20px;
   background: linear-gradient(122.93deg, rgba(100, 100, 100, 0.71) 1.7%, rgba(72, 71, 71, 0.12) 48.4%, rgba(115, 106, 106, 0.17) 94.76%);
   border-radius: 50px;
@@ -104,11 +104,43 @@ export default {
   }
 }
 @media (max-width: 768px) {
+  .BSResult__card{
+    width: 48%;
+  }
 }
-
 @media (max-width: 480px) {
+  .BSResult__inner{
+    padding: 100px 0 86px 0;
+  }
+  .BSResult__title{
+    line-height: 45px;
+  }
+  .BSResult__cards{
+    row-gap: 20px;
+    column-gap: normal;
+  }
+  .BSResult__card{
+    width: 100%;
+    padding: 35px 25px;
+  }
 }
 @media (max-width: 360px) {
-
+  .BSResult__inner{
+    padding: 100px 0;
+  }
+  .BSResult__title{
+    font-size: 24px;
+    line-height: 40px;
+    padding-bottom: 26px;
+  }
+  .BSResult__cards{
+    row-gap: 15px;
+  }
+  .BSResult__card{
+    padding: 30px 10px 30px 10px;
+  }
+  .BSResult__text{
+    font-size: 16px;
+  }
 }
 </style>

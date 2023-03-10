@@ -53,7 +53,6 @@ export default {}
 
 <style scoped>
 .BMCards {
-  width: 100vw;
   background: #181816;
 }
 .BMCards__inner {

@@ -154,14 +154,28 @@ export default {
   color: #1D1D1D;
   margin-left: 30px;
 }
-@media (max-width: 1024px) {
-}
-@media (max-width: 768px) {
-}
-
 @media (max-width: 480px) {
+  .BSProgram__box{
+    padding: 25px 30px 45px 30px;
+  }
+  .BSProgram__module, .BSProgram__desc{
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 @media (max-width: 360px) {
-
+  .BSProgram__title{
+    font-size: 24px;
+  }
+  .BSProgram__box{
+    padding: 25px 26px 45px 30px;
+  }
+  .BSProgram__module, .BSProgram__desc{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .BSProgram__module{
+    padding-bottom: 10px;
+  }
 }
 </style>
