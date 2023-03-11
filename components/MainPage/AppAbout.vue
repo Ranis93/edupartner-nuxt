@@ -5,7 +5,7 @@
       <div class="about__inner">
         <div class="about__left-side">
           <div class="about__title">
-            ОБ EDUPARTNER
+            EDUPARTNER
           </div>
           <div class="about__text">
             EDUPARTNER начал существование в 2009 году, как Приуральский центр
@@ -34,10 +34,10 @@
           </div>
         </div>
       </div>
-      <div class="about__title toggle">
+      <div class="about__title toggle" style="display: none">
         Цикл работы
       </div>
-      <div class="about__cards">
+      <div class="about__cards" style="display: none">
         <div class="about__card">
           <div class="about__icon">
             <img
@@ -124,7 +124,7 @@ export default {}
 <style scoped>
 .about {
   position: relative;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   background-color: #181816;
 }
 
@@ -132,7 +132,6 @@ export default {}
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 100px;
 }
 .about__left-side {
   width: 45%;
@@ -251,7 +250,6 @@ export default {}
   }
   .about__inner {
     flex-wrap: wrap;
-    margin-bottom: 80px;
   }
   .about__left-side,
   .about__right-side {
@@ -285,7 +283,6 @@ export default {}
   }
   .about__inner {
     row-gap: 20px;
-    margin-bottom: 50px;
   }
   .about__cards {
     row-gap: 20px;

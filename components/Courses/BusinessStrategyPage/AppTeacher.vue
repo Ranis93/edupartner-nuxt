@@ -3,7 +3,7 @@
     <div class="container">
       <div class="BSTeacher__inner">
         <div class="BSTeacher__title">
-          Преподаватель курса
+          Преподаватель курса «Бизнес-стратегия»
         </div>
         <div class="BSTeacher__box">
           <div class="BSTeacher__text">

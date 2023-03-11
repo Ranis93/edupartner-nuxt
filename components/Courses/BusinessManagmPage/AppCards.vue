@@ -15,7 +15,7 @@
             </nuxt-link>
             <div class="BMCards__text">
               <div class="BMCards__type">
-                offline-курс
+                Очно 2 дня
               </div>
               <div class="BMCards__desc">
                 Бизнес-стратегия
@@ -34,7 +34,7 @@
             </nuxt-link>
             <div class="BMCards__text">
               <div class="BMCards__type">
-                offline-курс
+                Дистанционно на платформе
               </div>
               <div class="BMCards__desc">
                 Стратегический анализ

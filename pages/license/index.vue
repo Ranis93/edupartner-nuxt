@@ -85,7 +85,6 @@
         </div>
       </div>
     </header>
-
     <section class="license second">
       <div class="container">
         <div class="license-inner">
@@ -576,6 +575,21 @@ export default {
   name: 'LicensePage',
   mixins: [hoveringMixin],
   layout: 'emptyLt',
+  head () {
+    return {
+      title: 'Образовательная лицензия Edupartner',
+      meta: [
+        {
+          name: 'description',
+          content: 'Eduparter совместно с Приуральским центром дополнительного профессоинального обрзования(лицензированная образовательная организация) осуществляют образовательные услуги: повышение квалификации, профессиональная переподготовка, профессиональное обучение, семинары, вебинары.'
+        },
+        {
+          name: 'keywords',
+          content: 'О лицензии EduPartner'
+        }
+      ]
+    }
+  },
   mounted () {
     try {
       dragDropSlider('.header__slider', '.header__list', '.header__right-blocks', '.header__right-block', '.header__arrows', 3)

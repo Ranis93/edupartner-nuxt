@@ -7,54 +7,74 @@
         </div>
         <div class="directions__cards">
           <div class="directions__card one">
-            <div class="directions__img">
-              <img
-                src="../../assets/images/main-page/cards-img-01.png"
-                alt="cards-img-01"
-              >
-              <span class="mask" />
-            </div>
-            <div class="directions__text">
-              Управление Вашим бизнесом
-            </div>
-          </div>
-          <div class="directions__card two">
-            <div class="directions__img">
-              <img
-                src="../../assets/images/main-page/cards-img-02.png"
-                alt="cards-img-02"
-              >
-              <span class="mask" />
-            </div>
-            <div class="directions__text">
-              Бизнес-консультации
-            </div>
-          </div>
-          <div class="directions__card three">
-            <div class="directions__img">
-              <img
-                src="../../assets/images/main-page/cards-img-03.png"
-                alt="cards-img-03"
-              >
-              <span class="mask" />
-            </div>
-            <div class="directions__text">
-              IT-разработки
-            </div>
-          </div>
-          <div class="directions__card four">
-            <nuxt-link to="/courses/business-and-management">
+            <nuxt-link to="/">
               <div class="directions__img">
                 <img
-                  src="../../assets/images/main-page/cards-img-04.png"
-                  alt="cards-img-04"
+                  src="../../assets/images/main-page/dir-cards/cards-img-01.png"
+                  alt="cards-img-01"
                 >
                 <span class="mask" />
               </div>
+              <div class="directions__text">
+                Управление Вашим бизнесом
+              </div>
             </nuxt-link>
-            <div class="directions__text">
-              Курсы по бизнесу и управлению
-            </div>
+          </div>
+          <div class="directions__card two">
+            <nuxt-link to="/courses/business-and-management">
+              <div class="directions__img">
+                <img
+                  src="../../assets/images/main-page/dir-cards/cards-img-02.png"
+                  alt="cards-img-02"
+                >
+                <span class="mask" />
+              </div>
+              <div class="directions__text">
+                Курсы по бизнесу и управлению
+              </div>
+            </nuxt-link>
+          </div>
+          <div class="directions__card three">
+            <nuxt-link to="/">
+              <div class="directions__img">
+                <img
+                  src="../../assets/images/main-page/dir-cards/cards-img-03.png"
+                  alt="cards-img-03"
+                >
+                <span class="mask" />
+              </div>
+              <div class="directions__text">
+                IT-разработки
+              </div>
+            </nuxt-link>
+          </div>
+          <div class="directions__card three">
+            <nuxt-link to="/">
+              <div class="directions__img">
+                <img
+                  src="../../assets/images/main-page/dir-cards/cards-img-04.png"
+                  alt="cards-img-03"
+                >
+                <span class="mask" />
+              </div>
+              <div class="directions__text">
+                Бизнес-консультации
+              </div>
+            </nuxt-link>
+          </div>
+          <div class="directions__card three">
+            <nuxt-link to="/">
+              <div class="directions__img">
+                <img
+                  src="../../assets/images/main-page/dir-cards/cards-img-05.png"
+                  alt="cards-img-03"
+                >
+                <span class="mask" />
+              </div>
+              <div class="directions__text">
+                Диагностика бизнеса
+              </div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -123,13 +143,14 @@ export default {}
   line-height: 29px;
   color: #FFFFFF;
 }
-.directions__card.one,
-.directions__card.four {
+.directions__card.one {
   width: 57.7%;
 }
-.directions__card.two,
-.directions__card.three {
+.directions__card.two{
   width: 40.6%;
+}
+.directions__card.three{
+  width: 32.2%;
 }
 @media (max-width: 768px) {
   .directions__text {
@@ -139,9 +160,11 @@ export default {}
   .directions__card {
     height: 253px;
   }
-  .directions__card.one,
-  .directions__card.four {
+  .directions__card.one {
     width: 56%;
+  }
+  .directions__card.three {
+    width: 31%;
   }
   .directions__img,
   .directions__img>img,
@@ -156,8 +179,7 @@ export default {}
   .directions__card {
     height: 232px;
   }
-  .directions__card.one,
-  .directions__card.four {
+  .directions__card.one {
     width: 100%;
   }
   .directions__card.two,

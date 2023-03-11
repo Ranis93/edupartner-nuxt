@@ -5,9 +5,9 @@
         <div class="space__text one">
           Берем ответственность за развитие бизнеса
         </div>
-        <div class="space__title">
-          EDUPARTNER — космический <span>запуск вашего бизнеса</span>
-        </div>
+        <h1 class="space__title">
+          EDUPARTNER — космический <span>запуск Вашего бизнеса</span>
+        </h1>
         <div class="space__text">
           Полный цикл работы: диагностика, управление, кадровый и управленческий
           консалтинг

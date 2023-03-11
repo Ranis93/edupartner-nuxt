@@ -17,14 +17,6 @@
             </div>
             <div class="BSWhy__card">
               <div class="BSWhy__img">
-                <img src="../../../assets/images/courses/business-strategy/yellow_star.svg" alt="star">
-              </div>
-              <div class="BSWhy__text">
-                За нашими плечами большой опыт в развитии бизнеса в интернете. Мы поможем “не набить шишки” и сделаем все качественно.
-              </div>
-            </div>
-            <div class="BSWhy__card">
-              <div class="BSWhy__img">
                 <img src="../../../assets/images/courses/business-strategy/yellow_pc.svg" alt="pc">
               </div>
               <div class="BSWhy__text">

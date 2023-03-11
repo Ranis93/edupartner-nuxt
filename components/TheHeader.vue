@@ -13,13 +13,21 @@
         <div class="header__list">
           <a class="underline underline_a" href="#!"> Обучение </a>
           <a href="#!"> Управление </a>
-          <a href="#!"> Об EDUPARTNER </a>
+          <a href="#!"> О компании </a>
           <a href="#!"> Контакты </a>
           <a href="#!"> Отзывы </a>
         </div>
         <div class="header__more">
-          <div class="header__flag">
-            <img src="../assets/images/main-page/flag-ru.svg" alt="ru">
+          <div class="header__flags">
+            <div class="header__flag">
+              <img src="../assets/images/flags/br.png" alt="br">
+            </div>
+            <div class="header__flag">
+              <img src="../assets/images/flags/kz.png" alt="kz">
+            </div>
+            <div class="header__flag">
+              <img src="../assets/images/flags/ru.png" alt="ru">
+            </div>
           </div>
           <div class="header__burger">
             <img
@@ -66,9 +74,14 @@ export default {}
   width: 109px;
   height: 74px;
 }
-
+.header__flags{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
 .header__flag {
-  width: 62px;
+  width: 35px;
   height: 35px;
 }
 
@@ -94,7 +107,7 @@ export default {}
 .header__more {
   display: flex;
   justify-content: flex-end;
-  column-gap: 24px;
+  column-gap: 23px;
   align-items: center;
 }
 
@@ -106,9 +119,6 @@ export default {}
 @media (max-width: 1024px) {
   .container {
     padding: 0 20px;
-  }
-  .header__flag {
-    width: 56px;
   }
 }
 @media (max-width: 768px) {
@@ -130,6 +140,18 @@ export default {}
   .header__flag,
   .header__burger {
     display: block;
+  }
+}
+@media (max-width: 360px) {
+  .header__more{
+    column-gap: 13px;
+  }
+  .header__flags{
+    column-gap: 7px;
+  }
+  .header__flag{
+    width: 29px;
+    height: 29px;
   }
 }
 </style>

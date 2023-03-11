@@ -3,9 +3,9 @@
     <div class="container">
       <div class="BMMain__inner">
         <div class="BMMain__desc">
-          <div class="BMMain__title">
+          <h1 class="BMMain__title">
             <span>Курсы</span> по бизнесу и управлению
-          </div>
+          </h1>
           <div class="BMMain__text">
             От преподавателей с опытом <br> в управлении более 15 лет
           </div>

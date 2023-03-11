@@ -27,7 +27,6 @@ export default {
 <style>
 .appMain>.container{
   position: relative;
-  overflow-x: scroll;
 }
 @media (max-width: 480px) {
   .appMain>.container{

@@ -4,9 +4,9 @@
       <div class="BSMain__inner">
         <div class="BSMain__content">
           <div class="BSMain__about">
-            <div class="BSMain__title">
+            <h1 class="BSMain__title">
               Бизнес-стратегия
-            </div>
+            </h1>
             <div class="BSMain__hat">
               Двухдневный <strong>очный</strong> курс
             </div>
@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="BSMain__desc">
-          от <strong>EDUPARTNER</strong> и преподавателя с опытом работы на руководящей должности <strong>более 15 лет и с высшей степенью бизнеса - МВА</strong>
+          от <strong>EDUPARTNER</strong> и Приуральского центра образования
         </div>
       </div>
     </div>

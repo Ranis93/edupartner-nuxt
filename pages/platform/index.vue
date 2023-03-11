@@ -254,7 +254,22 @@ import AppTariffs from '~/components/PlatformPage/AppTariffs.vue'
 export default {
   name: 'PlatformPage',
   components: { AppHeader, AppTariffs },
-  layout: 'emptyLt'
+  layout: 'emptyLt',
+  head () {
+    return {
+      title: 'Платформа Edupartner',
+      meta: [
+        {
+          name: 'description',
+          content: 'У нас есть собственная образовательная платформа EduExp. EduExp объединяет людей, где каждый может найти себе клиентов, преподавать или получить образование.'
+        },
+        {
+          name: 'keywords',
+          content: 'О платформе EduPartner'
+        }
+      ]
+    }
+  }
 }
 </script>
 

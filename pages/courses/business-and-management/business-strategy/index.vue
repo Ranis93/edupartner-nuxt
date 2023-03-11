@@ -9,7 +9,6 @@
     <AppTeacher />
     <AppProgram />
     <AppPrice />
-    <AppReviews />
     <AppChoose />
   </div>
 </template>
@@ -24,13 +23,27 @@ import AppHow from '~/components/Courses/BusinessStrategyPage/AppHow.vue'
 import AppTeacher from '~/components/Courses/BusinessStrategyPage/AppTeacher.vue'
 import AppProgram from '~/components/Courses/BusinessStrategyPage/AppProgram.vue'
 import AppPrice from '~/components/Courses/BusinessStrategyPage/AppPrice.vue'
-import AppReviews from '~/components/Courses/BusinessStrategyPage/AppReviews.vue'
+// import AppReviews from '~/components/Courses/BusinessStrategyPage/AppReviews.vue'
 import AppChoose from '~/components/MainPage/AppChoose.vue'
 export default {
   name: 'BusinessStrategyPage',
-  components: { AppMain, AppLetter, AppInfo, AppResult, AppWhy, AppHow, AppTeacher, AppProgram, AppPrice, AppReviews, AppChoose },
+  components: { AppMain, AppLetter, AppInfo, AppResult, AppWhy, AppHow, AppTeacher, AppProgram, AppPrice, AppChoose },
+  head () {
+    return {
+      title: 'Очный Бизнес-тренинг в Уфе по Вашему бизнесу | Edupartner',
+      meta: [
+        {
+          name: 'description',
+          content: 'Обучение бизнес стратегии для предпринимателей в Уфе. Двухдневный очный курс для владельцев малого и среднего бизнеса по выгодным ценам.'
+        },
+        {
+          name: 'keywords',
+          content: 'Бизнес стратегия'
+        }
+      ]
+    }
+  },
   mounted () {
-    // this.$store.getters.scrollPageToTop
     this.$store.commit('bredcrumbs/changeAmountBredcrumbs', { value: 2 })
     this.$store.commit('bredcrumbs/changeBredcrumbs', {
       values: ['Курсы по бизнесу и упралению', 'Бизнес-стратегия'],

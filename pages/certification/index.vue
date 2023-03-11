@@ -8,9 +8,9 @@
               <p class="header__left-sert-text">
                 Сертификат за 10 минут
               </p>
-              <h2 class="header__left-sert-title">
+              <h1 class="header__left-sert-title">
                 Сертификация негосударственных судебных экспертов
-              </h2>
+              </h1>
               <a
                 href="https://eduexp.ru/stm_lms_course_category/сертификация-негосударственных-суде/"
                 class="header__left-btn"
@@ -83,7 +83,6 @@
         </div>
       </div>
     </header>
-
     <section class="system third">
       <div class="container">
         <div class="license-inner">
@@ -443,6 +442,21 @@ export default {
   name: 'CertificationPage',
   mixins: [hoveringMixin],
   layout: 'emptyLt',
+  head () {
+    return {
+      title: 'EduPartner✅Система Сертификации для негосударственных судебных экспертов',
+      meta: [
+        {
+          name: 'description',
+          content: 'Автоматизированная Система Сертификации для негосударственных судебных экспертов разработана в 2020 в период пандемии для уменьшения стоимости и сокращения сроков сертификации от 10 мин до 2 часов с учётом оплаты, загрузки документов и формирования сертификата для скачивания в личном кабинете'
+        },
+        {
+          name: 'keywords',
+          content: 'Сертификация негосударственных судебных экспертов'
+        }
+      ]
+    }
+  },
   mounted () {
     try {
       dragDropSlider('.header__slider', '.header__list', '.header__right-blocks', '.header__right-block', '.header__arrows', 3)
