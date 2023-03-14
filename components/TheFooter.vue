@@ -10,13 +10,19 @@
             >
           </a>
           <div class="footer__column col-1">
-            <a href="#!" class="footer__title"> Обучение </a>
+            <nuxt-link to="/courses/business-and-management" class="footer__title">
+              Обучение
+            </nuxt-link>
             <ul class="footer__links">
               <li>
-                <a href="#!" class="footer__link"> Бизнес-стратегия </a>
+                <nuxt-link to="/courses/business-and-management/business-strategy" class="footer__link">
+                  Бизнес-стратегия
+                </nuxt-link>
               </li>
               <li>
-                <a href="#!" class="footer__link"> Стратегический анализ </a>
+                <nuxt-link to="/courses/business-and-management/strategic-analysis" class="footer__link">
+                  Стратегический анализ
+                </nuxt-link>
               </li>
               <li>
                 <a href="#!" class="footer__link"> IT-курсы </a>
@@ -42,7 +48,7 @@
           </ul>
         </div>
         <div class="footer__column col-3">
-          <a href="#!" class="footer__title"> Об EDUPARTNER </a>
+          <a href="#!" class="footer__title"> О компании </a>
           <ul class="footer__links">
             <li>
               <a href="#!" class="footer__link"> О компании </a>

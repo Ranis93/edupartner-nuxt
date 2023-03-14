@@ -65,7 +65,7 @@ export default {
 
 <style scoped>
 .progress {
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 .progress__inner {
   padding: 100px 0;

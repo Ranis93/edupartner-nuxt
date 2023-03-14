@@ -73,7 +73,7 @@ export default {
 
 <style scoped>
 .BSInfo{
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 .BSInfo__inner{
   padding: 70px 0;
@@ -112,7 +112,7 @@ export default {
   border-radius: 50px;
   padding: 15px 50px;
 
-  font-family: 'Verdana';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;

@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="BMCards__card">
-            <nuxt-link to="/">
+            <nuxt-link to="/courses/business-and-management/strategic-analysis">
               <div class="BMCards__img">
                 <img
                   src="../../../assets/images/courses/business-and-management/course_str_an.png"

@@ -11,11 +11,36 @@
           </div>
         </nuxt-link>
         <div class="header__list">
-          <a class="underline underline_a" href="#!"> Обучение </a>
-          <a href="#!"> Управление </a>
-          <a href="#!"> О компании </a>
-          <a href="#!"> Контакты </a>
-          <a href="#!"> Отзывы </a>
+          <nuxt-link
+            to="/courses/business-and-management"
+            exact
+          >
+            Обучение
+          </nuxt-link>
+          <nuxt-link
+            to="/"
+            exact
+          >
+            Управление
+          </nuxt-link>
+          <nuxt-link
+            to="/"
+            exact
+          >
+            О компании
+          </nuxt-link>
+          <nuxt-link
+            to="/"
+            exact
+          >
+            Контакты
+          </nuxt-link>
+          <nuxt-link
+            to="/"
+            exact
+          >
+            Отзывы
+          </nuxt-link>
         </div>
         <div class="header__more">
           <div class="header__flags">
@@ -42,7 +67,8 @@
 </template>
 
 <script>
-export default {}
+export default {
+}
 </script>
 
 <style scoped>
@@ -57,7 +83,7 @@ export default {}
 }
 
 .header__inner {
-  padding: 17px 0;
+  padding: 13px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,14 +121,34 @@ export default {}
   color: #FFFFFF;
   list-style: none;
   height: 30px;
+  background-image: linear-gradient(to left, rgba(250, 255, 0, 1) 0%, transparent 90%);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
 }
 
 .header__list>a:hover {
+  background-size: 100% 2px;
+}
+
+/* .header__list>a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  list-style: none;
+  height: 30px;
+}
+
+.header__list>a.hover {
   background-image: linear-gradient(to left, rgba(250, 255, 0, 1) 0%, transparent 90%);
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: 100% 2px;
-}
+} */
 
 .header__more {
   display: flex;

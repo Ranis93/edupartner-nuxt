@@ -130,7 +130,7 @@ export default {
   width: fit-content;
 }
 .BSPrice__btn1{
-  font-family: 'Verdana';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -175,7 +175,7 @@ export default {
   width: fit-content;
 }
 .BSPrice__btn2{
-  font-family: 'Verdana';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;

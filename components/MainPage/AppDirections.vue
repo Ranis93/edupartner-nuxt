@@ -111,6 +111,10 @@ export default {}
 .directions__card {
   height: 300px;
   position: relative;
+  transition: all .2s;
+}
+.directions__card:hover {
+  transform: scale(1.01);
 }
 
 .directions__img {

@@ -142,7 +142,7 @@ export default {
   width: fit-content;
 }
 .BSTeacher__btn{
-  font-family: 'Verdana';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;

@@ -29,13 +29,13 @@
 </template>
 
 <script>
-import VideoPlayer from '@/assets/js/playVideo'
+// import VideoPlayer from '@/assets/js/playVideo'
 export default {
-  mounted () {
-    try {
-      new VideoPlayer('.BSMain__play-circle', '.overlay').init()
-    } catch (error) {}
-  }
+  // mounted () {
+  //   try {
+  //     new VideoPlayer('.BSMain__play-circle', '.overlay').init()
+  //   } catch (error) {}
+  // }
 }
 </script>
 
@@ -64,7 +64,7 @@ export default {
   max-width: 350px;
 }
 .BSMain__hat{
-  font-family: 'Verdana';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -86,7 +86,7 @@ export default {
   cursor: pointer;
 }
 .BSMain__text{
-  font-family: 'Verdana';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;

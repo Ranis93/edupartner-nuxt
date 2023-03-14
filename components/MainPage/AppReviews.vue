@@ -66,7 +66,7 @@ export default {
 
 <style scoped>
 .reviews {
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 .reviews__inner {
   padding: 100px 0 150px 0;

@@ -9,12 +9,14 @@
         <div class="control__text">
           В этом разделе представлен наш проект под полным циклом управления.
         </div>
-        <div class="control__img">
-          <img src="../../assets/images/main-page/drevo-ru.png" alt="drevo-ru">
-          <div class="control__desc">
-            Центр семейной родословной Галины Рублевой
+        <nuxt-link to="/">
+          <div class="control__img">
+            <img src="../../assets/images/main-page/drevo-ru.png" alt="drevo-ru">
+            <div class="control__desc">
+              Центр семейной родословной Галины Рублевой
+            </div>
           </div>
-        </div>
+        </nuxt-link>
       </div>
     </div>
   </section>
@@ -49,6 +51,10 @@ export default {
   padding: 100px 0;
   z-index: 2;
 }
+.control__inner>a{
+  display: block;
+  width: fit-content;
+}
 .control__title {
   font-weight: 700;
   font-size: 32px;
@@ -70,6 +76,10 @@ export default {
   max-width: 480px;
   max-height: 300px;
   position: relative;
+  transition: all .2s;
+}
+.control__img:hover{
+  transform: scale(1.01);
 }
 .control__desc {
   font-family: 'Lato', sans-serif;
