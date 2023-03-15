@@ -67,6 +67,7 @@ export default {
   font-size: 64px;
   line-height: 70px;
   color: #FAFF00;
+  max-width: 580px;
 }
 .SAMain__hat{
   font-family: 'Montserrat', sans-serif;
@@ -124,6 +125,9 @@ export default {
   .SAMain__title, .SAMain__text{
     font-size: 55px;
   }
+  .SAMain__title{
+    max-width: 520px;
+  }
   .SAMain__play-circle{
     margin-top: 50px;
   }
@@ -138,6 +142,7 @@ export default {
   .SAMain__title{
     font-size: 40px;
     line-height: 50px;
+    max-width: 360px;
   }
   .SAMain__text{
     font-size: 40px;
@@ -176,6 +181,7 @@ export default {
   .SAMain__title{
     font-size: 35px;
     line-height: 45px;
+    max-width: 318px;
   }
   .SAMain__hat{
     margin-top: 20px;

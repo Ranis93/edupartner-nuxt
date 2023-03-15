@@ -40,7 +40,9 @@
               <a href="#!" class="footer__link"> Бизнес-консультация </a>
             </li>
             <li>
-              <a href="#!" class="footer__link"> IT-разработка </a>
+              <nuxt-link to="/it-development" class="footer__link">
+                IT-разработки
+              </nuxt-link>
             </li>
             <li>
               <a href="#!" class="footer__link"> Интернет-маркетинг </a>

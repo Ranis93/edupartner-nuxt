@@ -35,7 +35,7 @@
             </nuxt-link>
           </div>
           <div class="directions__card three">
-            <nuxt-link to="/">
+            <nuxt-link to="/it-development">
               <div class="directions__img">
                 <img
                   src="../../assets/images/main-page/dir-cards/cards-img-03.png"

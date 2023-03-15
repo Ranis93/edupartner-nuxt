@@ -69,8 +69,11 @@ export default {}
   width: 380px;
   height: 250px;
   position: relative;
+  transition: all .2s;
 }
-
+.BMCards__card:hover {
+  transform: scale(1.01);
+}
 .BMCards__img {
   width: 100%;
   height: 100%;
