@@ -3,23 +3,30 @@
     <div class="container">
       <div class="ServiceLines__inner">
         <div class="ServiceLines__title">
-          НАПРАВЛЕНИЯ УСЛУГ
+          Типы сайтов
         </div>
         <div class="ServiceLines__desc">
-          Больше, чем специалисты. Мы проводим отбор, и к работе приступает тот, кто прошёл испытания. С нами работают лучшие из лучших.
+          Существуют разные типы сайтов и в зависимости от поставленных задач, выбирается определенный тип сайта, который будет работать и приносить прибыль.
         </div>
         <div class="ServiceLines__cards">
-          <a href="#!">
-            <div class="ServiceLines__card dev">
+          <nuxt-link to="/">
+            <div class="ServiceLines__card landing">
               <div class="ServiceLines__text">
-                Разработка сайта
+                Landing page
+              </div>
+            </div>
+          </nuxt-link>
+          <a href="#!">
+            <div class="ServiceLines__card coorp">
+              <div class="ServiceLines__text">
+                Корпоративный сайт
               </div>
             </div>
           </a>
           <a href="#!">
-            <div class="ServiceLines__card seo">
+            <div class="ServiceLines__card internet">
               <div class="ServiceLines__text">
-                SEO-продвижение
+                Интернет-магазин
               </div>
             </div>
           </a>
@@ -64,13 +71,15 @@ export default {
   font-size: 20px;
   line-height: 24px;
   max-width: 780px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   color: #F5F5F5;
 }
 .ServiceLines__cards{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 30px;
   column-gap: 15px;
 }
 .ServiceLines__cards>a{
@@ -86,14 +95,12 @@ export default {
   background-position: center;
   background-size: contain;
 }
-.ServiceLines__card.dev{
-  background-image: url('../../../assets/images/control/it-development/cards/mac_laptop.png');
+.ServiceLines__card.landing{
+  background-image: url('../../../assets/images/control/site-development/cards/mac_laptop.png');
 }
-.ServiceLines__card.seo{
-  background-image: url('../../../assets/images/control/it-development/cards/settings.png');
-}
+
 .ServiceLines__card.graph{
-  background-image: url('../../../assets/images/control/it-development/cards/graphs.png');
+  background-image: url('../../../assets/images/control/site-development/cards/graphs.png');
 }
 .ServiceLines__card:hover{
   transform: scale(1.01);
@@ -135,6 +142,9 @@ export default {
 @media (max-width: 768px) {
   .ServiceLines__title{
     font-size: 28px;
+  }
+  .ServiceLines__cards>a{
+    width: 31%;
   }
   .ServiceLines__card{
     height: 162px;

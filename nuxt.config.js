@@ -30,7 +30,8 @@ export default {
   css: [
     '~/assets/css/reset.css',
     '~/assets/css/animate1.css',
-    '~/assets/css/main.css'
+    '~/assets/css/main.css',
+    '~/assets/scss/_variables.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

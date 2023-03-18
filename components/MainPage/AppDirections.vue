@@ -6,21 +6,7 @@
           ПРОЕКТЫ
         </div>
         <div class="directions__cards">
-          <div class="directions__card one">
-            <nuxt-link to="/">
-              <div class="directions__img">
-                <img
-                  src="../../assets/images/main-page/dir-cards/cards-img-01.png"
-                  alt="cards-img-01"
-                >
-                <span class="mask" />
-              </div>
-              <div class="directions__text">
-                Управление Вашим бизнесом
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="directions__card two">
+          <div class="directions__card">
             <nuxt-link to="/courses/business-and-management">
               <div class="directions__img">
                 <img
@@ -34,25 +20,25 @@
               </div>
             </nuxt-link>
           </div>
-          <div class="directions__card three">
-            <nuxt-link to="/it-development">
+          <div class="directions__card">
+            <nuxt-link to="/">
               <div class="directions__img">
                 <img
-                  src="../../assets/images/main-page/dir-cards/cards-img-03.png"
-                  alt="cards-img-03"
+                  src="../../assets/images/main-page/dir-cards/cards-img-06.png"
+                  alt="cards-img-06"
                 >
                 <span class="mask" />
               </div>
               <div class="directions__text">
-                IT-разработки
+                Бизнес-диагностика
               </div>
             </nuxt-link>
           </div>
-          <div class="directions__card three">
+          <div class="directions__card">
             <nuxt-link to="/">
               <div class="directions__img">
                 <img
-                  src="../../assets/images/main-page/dir-cards/cards-img-04.png"
+                  src="../../assets/images/main-page/dir-cards/cards-img-03.png"
                   alt="cards-img-03"
                 >
                 <span class="mask" />
@@ -62,17 +48,45 @@
               </div>
             </nuxt-link>
           </div>
-          <div class="directions__card three">
-            <nuxt-link to="/">
+          <div class="directions__card">
+            <nuxt-link to="/site-development">
               <div class="directions__img">
                 <img
-                  src="../../assets/images/main-page/dir-cards/cards-img-05.png"
-                  alt="cards-img-03"
+                  src="../../assets/images/main-page/dir-cards/cards-img-04.png"
+                  alt="cards-img-04"
                 >
                 <span class="mask" />
               </div>
               <div class="directions__text">
-                Диагностика бизнеса
+                Разработка сайта
+              </div>
+            </nuxt-link>
+          </div>
+          <div class="directions__card">
+            <nuxt-link to="/internet-marketing">
+              <div class="directions__img">
+                <img
+                  src="../../assets/images/main-page/dir-cards/cards-img-05.png"
+                  alt="cards-img-05"
+                >
+                <span class="mask" />
+              </div>
+              <div class="directions__text">
+                Интернет-маркетинг
+              </div>
+            </nuxt-link>
+          </div>
+          <div class="directions__card">
+            <nuxt-link to="/">
+              <div class="directions__img">
+                <img
+                  src="../../assets/images/main-page/dir-cards/cards-img-01.png"
+                  alt="cards-img-01"
+                >
+                <span class="mask" />
+              </div>
+              <div class="directions__text">
+                Управление Вашим бизнесом
               </div>
             </nuxt-link>
           </div>
@@ -112,6 +126,7 @@ export default {}
   height: 300px;
   position: relative;
   transition: all .2s;
+  width: 32.2%;
 }
 .directions__card:hover {
   transform: scale(1.01);
@@ -140,21 +155,13 @@ export default {}
 .directions__text {
   position: absolute;
   bottom: 35px;
-  left: 45px;
+  left: 25px;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
-}
-.directions__card.one {
-  width: 57.7%;
-}
-.directions__card.two{
-  width: 40.6%;
-}
-.directions__card.three{
-  width: 32.2%;
+  max-width: 340px;
 }
 @media (max-width: 768px) {
   .directions__text {
@@ -163,11 +170,6 @@ export default {}
   }
   .directions__card {
     height: 253px;
-  }
-  .directions__card.one {
-    width: 56%;
-  }
-  .directions__card.three {
     width: 31%;
   }
   .directions__img,
@@ -182,12 +184,6 @@ export default {}
   }
   .directions__card {
     height: 232px;
-  }
-  .directions__card.one {
-    width: 100%;
-  }
-  .directions__card.two,
-  .directions__card.three {
     width: 47%;
   }
   .directions__text {

@@ -71,11 +71,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '~/assets/scss/variables.scss';
 .header {
   background-color: rgba(60, 60, 60, 0.25);
   position: fixed;
-  width: 100vw;
   top: 0;
   left: 0;
   right: 0;
@@ -110,10 +110,8 @@ export default {
   width: 35px;
   height: 35px;
 }
-
-.header__list,
-.header__list>a {
-  font-family: 'Lato', sans-serif;
+.header__list {
+  font-family: $ff2;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -126,37 +124,19 @@ export default {
   background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size .3s;
+  a {
+    @extend .header__list;
+    &:hover {
+      background-size: 100% 2px;
+    }
+  }
 }
-
-.header__list>a:hover {
-  background-size: 100% 2px;
-}
-
-/* .header__list>a {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  list-style: none;
-  height: 30px;
-}
-
-.header__list>a.hover {
-  background-image: linear-gradient(to left, rgba(250, 255, 0, 1) 0%, transparent 90%);
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: 100% 2px;
-} */
-
 .header__more {
   display: flex;
   justify-content: flex-end;
   column-gap: 23px;
   align-items: center;
 }
-
 .header__burger {
   display: none;
   width: 65px;

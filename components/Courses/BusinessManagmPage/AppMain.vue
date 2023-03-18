@@ -15,16 +15,19 @@
             <div class="BMMain__list">
               <div class="BMMain__track">
                 <div class="BMMain__slide">
-                  <div class="BMMain__card">
+                  <div class="BMMain__card one">
                     <div class="BMMain__name">
                       Мещерякова Наталья Анатольевна
                     </div>
                     <ul class="BMMain__about">
                       <li>
-                        Опыт работы директором автошколы
+                        Образование высшее, 2008г. СпбГУТ им.Бонч-Бруевича техническое направление: Автоматизация производственных процессов на предприятиях; «Практическая психология»; курсы по управлению для учредителей и директоров; тренинг «Власть.Управление карьерой» Михаила Хазина
                       </li>
                       <li>
-                        Директор учебного центра
+                        Опыт: 2005-2008 Специалист отдела продаж УФПС - Филиал ФГУП "Почта России"
+                      </li>
+                      <li>
+                        Собственник "Приуральский центр образования", образовательной платформы EDUEXP, EDUPARTNER, бизнес-проекта «Сертификация»,руководитель и создатель проекта "Стажировка для выпускников" "БизнесДиагностика».
                       </li>
                     </ul>
                     <div class="BMMain__img first">
@@ -33,19 +36,28 @@
                   </div>
                 </div>
                 <div class="BMMain__slide">
-                  <div class="BMMain__card">
+                  <div class="BMMain__card two">
                     <div class="BMMain__name">
                       Игина Марина Аркадьевна
                     </div>
+                    <div class="BMMain__position">
+                      Опыт работы:
+                    </div>
                     <ul class="BMMain__about">
                       <li>
-                        Опыт работы генеральным директором по производству и оптово — розничной торговли продуктов питания
+                        Генеральным директором предприятия по производству и оптово — розничной торговли продуктов питания;
                       </li>
                       <li>
-                        Главный экономист холдинга по производству и реализации товаров
+                        Директором учебного центра дополнительного и профессионального обучения.
                       </li>
                       <li>
-                        Собственник бизнеса в фитнес-индустрии и консалтинговой компании «БИЗНЕС МЕТОDИКА»
+                        Исполнительным директором холдинга: гостиничный бизнес, сельское хозяйство, добыча нерудных материалов, производство
+                      </li>
+                      <li>
+                        Главным экономистом холдинга по производству и реализации товаров
+                      </li>
+                      <li>
+                        Собственник бизнеса в фитнес-индсутрии и консалтинговая компания «БИЗНЕС МЕТОDИКА»
                       </li>
                     </ul>
                     <div class="BMMain__img second">
@@ -96,7 +108,7 @@ export default {
 }
 
 .BMMain__inner {
-  padding: 196px 0 0 0;
+  padding: 135px 0 0 0;
   display: flex;
   column-gap: 20px;
 }
@@ -115,7 +127,7 @@ export default {
 }
 
 .BMMain__title {
-  padding: 34px 0 25px 0;
+  padding: 95px 0 25px 0;
   max-width: 678px;
   font-weight: 700;
   font-size: 45px;
@@ -130,7 +142,6 @@ export default {
   position: relative;
 }
 .BMMain__slider {
-  margin-top: 41px;
   vertical-align: middle;
   position: relative;
   display: inline-block;
@@ -150,7 +161,7 @@ export default {
 }
 .BMMain__list {
   width: 680px;
-  height: 654px;
+  height: 720px;
   overflow: hidden;
 }
 .BMMain__list.grab {
@@ -161,12 +172,9 @@ export default {
 }
 .BMMain__slide {
   width: 680px;
-  height: 654px;
+  height: 715px;
   padding-right: 20px;
   flex-shrink: 0;
-  display: flex;
-  align-items: top;
-  justify-content: center;
   box-sizing: content-box;
   position: relative;
 }
@@ -207,12 +215,11 @@ export default {
 }
 .BMMain__card {
   width: 680px;
-  height: 382px;
   flex-shrink: 0;
   box-sizing: border-box;
   background: linear-gradient(122.93deg, rgba(100, 100, 100, 0.71) 1.7%, rgba(72, 71, 71, 0.12) 48.4%, rgba(115, 106, 106, 0.17) 94.76%);
   border-radius: 50px;
-  padding: 50px 30px 0 30px;
+  padding: 50px 30px 30px 30px;
 }
 .BMMain__name{
   font-family: 'Lato', sans-serif;
@@ -224,85 +231,108 @@ export default {
 }
 .BMMain__about{
   margin-left: 30px;
-  max-width: 350px;
-
-  color: #D4D4D4;
+  max-width: 560px;
 }
-.BMMain__about>li{
-  padding-bottom: 10px;
+.BMMain__position, .BMMain__about>li{
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  color: #D4D4D4;
+}
+.BMMain__position{
+  padding-bottom: 15px;
+}
+.BMMain__about>li{
+  padding-bottom: 10px;
 }
 .BMMain__img{
   width: auto;
   position: absolute;
   bottom: 0;
-  right: 10px;
 }
 .BMMain__img.first{
-  height: 543px;
+  height: 472px;
+  right: 0;
 }
 .BMMain__img.second{
-  height: 539px;
+  height: 437px;
+  right: 45px;
 }
 @media (max-width: 1024px) {
   .BMMain__inner {
     flex-wrap: wrap;
     flex-direction: column;
     padding-top: 230px;
+    row-gap: 45px;
   }
   .BMMain__title{
     padding-top: 0;
   }
   .BMMain__content{
-    align-self: flex-end;
-  }
-  .BMMain__slider{
-    margin-top: 0;
-  }
-  .BMMain__slider, .BMMain__list, .BMMain__slide, .BMMain__card{
-    width: 633px;
+    align-self: center;
   }
   .BMMain__slider, .BMMain__list, .BMMain__slide{
-    height: 603px;
+    width: 95vw;
+  }
+  .BMMain__card{
+    padding-top: 40px;
+  }
+  .BMMain__card.one{
+    width: 633px;
+  }
+  .BMMain__card.two{
+    width: 742px;
+  }
+  .BMMain__slider, .BMMain__list, .BMMain__slide{
+    height: 570px;
+  }
+  .BMMain__about{
+    max-width: 629px;
   }
   .BMMain__arrows{
-    bottom: 111px;
+    bottom: 84px;
+  }
+  .BMMain__img.first{
+    height: 543px;
   }
   .BMMain__img.second{
     height: 463px;
+    right: 0;
   }
 }
 @media (max-width: 768px) {
   .BMMain {
     background-position: 40% 100%;
   }
-  .BMMain__inner {
-    row-gap: 43px;
-  }
-  .BMCards__inner, .BMMain__slider, .BMMain__list, .BMMain__slide, .BMMain__card{
-    width: 603px;
-  }
   .BMMain__slider, .BMMain__list, .BMMain__slide{
     height: 572px;
   }
   .BMMain__card{
-    height: 351px;
+    padding: 30px 20px 40px 20px;
   }
-}
-@media (max-width: 660px) {
-  .BMMain__slider, .BMMain__list, .BMMain__slide, .BMMain__card{
-    width: 440px;
+  .BMMain__about{
+    max-width: 500px;
+  }
+  .BMMain__card.one, .BMMain__card.two{
+    width: 603px;
   }
   .BMMain__img.first{
-    height: 445px;
+    height: 394px;
   }
   .BMMain__img.second{
-    height: 357px;
+    height: 310px;
+  }
+  .BMMain__arrows{
+    bottom: 42px;
   }
 }
+@media (max-width: 700px) {
+  .BMMain__card.one, .BMMain__card.two{
+    width: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .BMMain {
     background-position: 30% 100%;
@@ -316,13 +346,17 @@ export default {
     row-gap: 40px;
   }
   .BMMain__slider, .BMMain__list, .BMMain__slide{
-    height: 575px;
+    height: fit-content;
   }
   .BMMain__slider, .BMMain__list, .BMMain__slide, .BMMain__card{
     width: 90vw;
   }
+  .BMMain__track{
+    align-items: flex-end;
+  }
   .BMMain__card{
-    padding: 40px 20px 0 20px;
+    padding: 40px 20px 20px 20px;
+    margin-bottom: 315px;
   }
   .BMMain__about{
     margin-left: 20px;
@@ -331,6 +365,15 @@ export default {
   }
   .BMMain__about>li{
     padding-bottom: 5px;
+  }
+  .BMMain__img.first{
+    height: 359px;
+  }
+  .BMMain__img.second{
+    height: 298px;
+  }
+  .BMMain__arrows{
+    bottom: 149px;
   }
   .BMMain__arrow-prev, .BMMain__arrow-next{
     width: 64px;
@@ -349,7 +392,8 @@ export default {
     padding-bottom: 20px;
   }
   .BMMain__card{
-    padding-top: 20px;
+    padding-top: 25px;
+    margin-bottom: 276px;
   }
   .BMMain__name{
     font-size: 18px;
@@ -363,14 +407,12 @@ export default {
     font-size: 16px;
     line-height: 19px;
   }
-  .BMMain__slider, .BMMain__list, .BMMain__slide{
-    height: 572px;
-  }
   .BMMain__img.first{
-    height: 376px;
+    height: 323px;
+    right: 11px;
   }
   .BMMain__img.second{
-    height: 305px;
+    height: 270px;
   }
   .BMMain__arrows{
     display: none;

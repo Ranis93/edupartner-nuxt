@@ -27,21 +27,17 @@
 export default {}
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '~/assets/scss/variables.scss';
 .space {
-  background-image: url('../../assets/images/main-page/bg-rocket-earth.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include bgcenter('../../assets/images/main-page/bg-rocket-earth.png');
 }
-
 .space__inner {
   padding: 196px 0 279px 0;
   position: relative;
 }
-
 .space__text {
-  font-family: 'Lato', sans-serif;
+  font-family: $ff2;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -49,7 +45,6 @@ export default {}
   color: #B2B3B1;
   max-width: 540px;
 }
-
 .space__title {
   padding: 10px 0 25px 0;
   max-width: 678px;
@@ -57,16 +52,13 @@ export default {}
   font-size: 45px;
   line-height: 55px;
   color: #FFFFFF;
+  span {
+    color: rgba(250, 255, 0, 1);
+  }
 }
-
-.space__title>span {
-  color: rgba(250, 255, 0, 1);
-}
-
 .space__btn {
   margin-top: 50px;
 }
-
 .space__link {
   padding: 10px 40px;
   background: #F9FF05;
@@ -78,7 +70,6 @@ export default {}
   line-height: 33px;
   color: rgba(29, 29, 29, 0.9);
 }
-
 .space__rocket {
   position: absolute;
   bottom: 0;
@@ -107,25 +98,20 @@ export default {}
   .space {
     background-position: 30% 100%;
   }
-
   .space__inner {
     padding-bottom: 295px;
   }
-
   .space__text {
     font-size: 18px;
     line-height: 22px;
   }
-
   .space__title {
     font-size: 36px;
     line-height: 45px;
   }
-
   .space__btn {
     margin-top: 40px;
   }
-
   .space__rocket {
     max-width: 438px;
     max-height: 284px;
@@ -136,17 +122,14 @@ export default {}
     font-size: 14px;
     line-height: 17px;
   }
-
   .space__title {
     font-size: 32px;
     line-height: 40px;
   }
-
   .space__link {
     font-size: 16px;
     padding: 10px 30px;
   }
-
   .space__rocket {
     max-height: fit-content;
     width: 100%;

@@ -1,0 +1,19 @@
+$ff1 : 'Montserrat', sans-serif;
+$ff2 : 'Lato', sans-serif;
+
+@mixin bradius ($rad) {
+  border-radius: $rad;
+}
+
+@mixin bgcenter($url) {
+  background: {
+    image : url($url);
+    repeat : no-repeat;
+    position: center;
+    size: cover;
+  };
+  // background-image: url($url);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+}
