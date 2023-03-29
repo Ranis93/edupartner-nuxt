@@ -62,7 +62,7 @@ export default {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 70px;
+  line-height: 40px;
   text-decoration: underline;
   color: #FAFF00;
 }
@@ -183,7 +183,7 @@ export default {
   }
   .BSMain__date{
     font-size: 16px;
-    line-height: 37px;
+    line-height: 30px;
   }
   .BSMain__title{
     font-size: 35px;
