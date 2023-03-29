@@ -2,6 +2,9 @@
   <section class="BSMain">
     <div class="container">
       <div class="BSMain__inner">
+        <div class="BSMain__date">
+          Первый поток 8 и 9 апреля, второй 15 и 16 апреля
+        </div>
         <div class="BSMain__content">
           <div class="BSMain__about">
             <h1 class="BSMain__title">
@@ -49,6 +52,19 @@ export default {
 }
 .BSMain__inner {
   padding: 230px 0 165px 0;
+  position: relative;
+}
+.BSMain__date{
+  position: absolute;
+  top: 160px;
+  left: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 70px;
+  text-decoration: underline;
+  color: #FAFF00;
 }
 .BSMain__video, .BSMain__about{
   display: flex;
@@ -111,6 +127,9 @@ export default {
   .BSMain__inner{
     padding-bottom: 157px;
   }
+  .BSMain__date{
+    top: 169px;
+  }
   .BSMain__hat{
     margin-top: 24px;
   }
@@ -125,6 +144,10 @@ export default {
   }
 }
 @media (max-width: 768px) {
+  .BSMain__date{
+    line-height: 40px;
+    top: 172px;
+  }
   .BSMain__title{
     font-size: 40px;
     line-height: 50px;
@@ -158,6 +181,10 @@ export default {
     padding-top: 228px;
     padding-bottom: 146px;
   }
+  .BSMain__date{
+    font-size: 16px;
+    line-height: 37px;
+  }
   .BSMain__title{
     font-size: 35px;
     line-height: 45px;
@@ -189,6 +216,10 @@ export default {
  .BSMain__inner{
   padding: 222px 0 66px 0;
  }
+  .BSMain__date{
+    top: 171px;
+    line-height: 20px;
+  }
  .BSMain__about{
   flex-wrap: wrap;
   flex-direction: column;
