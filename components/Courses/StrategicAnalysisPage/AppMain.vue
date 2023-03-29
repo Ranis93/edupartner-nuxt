@@ -29,13 +29,14 @@
 </template>
 
 <script>
-// import VideoPlayer from '@/assets/js/playVideo'
+import { insertBitrix1 } from '@/assets/js/bitrx-window-1.js'
 export default {
-  // mounted () {
-  //   try {
-  //     new VideoPlayer('.SAMain__play-circle', '.overlay').init()
-  //   } catch (error) {}
-  // }
+  mounted () {
+    // Вставка popup от Bitrix на кнопку
+    try {
+      insertBitrix1('.SAMain__about', '.SAMain__hat')
+    } catch (error) {}
+  }
 }
 </script>
 
@@ -76,7 +77,7 @@ export default {
   font-size: 24px;
   line-height: 30px;
   text-align: right;
-
+  cursor: pointer;
   color: #1D1D1D;
   background: #FAFF00;
   border-radius: 50px;

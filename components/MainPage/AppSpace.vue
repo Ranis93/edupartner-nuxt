@@ -61,7 +61,15 @@
 </template>
 
 <script>
-export default {}
+import { insertBitrix1 } from '@/assets/js/bitrx-window-1.js'
+export default {
+  mounted () {
+    // Вставка popup от Bitrix на кнопку
+    try {
+      insertBitrix1('.space__inner', '.space__btn')
+    } catch (error) {}
+  }
+}
 </script>
 
 <style lang="scss" scoped>

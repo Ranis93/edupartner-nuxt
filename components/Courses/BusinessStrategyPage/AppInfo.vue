@@ -55,11 +55,9 @@
           </li>
         </ul>
         <div class="BSInfo__link">
-          <a href="#!">
-            <div class="BSInfo__btn">
-              Записаться на курс
-            </div>
-          </a>
+          <div class="BSInfo__btn">
+            Записаться на курс
+          </div>
         </div>
       </div>
     </div>
@@ -67,7 +65,14 @@
 </template>
 
 <script>
+import { insertBitrix1 } from '@/assets/js/bitrx-window-1.js'
 export default {
+  mounted () {
+    // Вставка popup от Bitrix на кнопку
+    try {
+      insertBitrix1('.BSInfo__link', '.BSInfo__btn')
+    } catch (error) {}
+  }
 }
 </script>
 
@@ -106,6 +111,7 @@ export default {
   padding-top: 100px;
   width: fit-content;
   margin: 0 auto;
+  cursor: pointer;
 }
 .BSInfo__btn{
   background: #FAFF00;

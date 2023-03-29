@@ -45,11 +45,9 @@
           </li>
         </ul>
         <div class="SAInfo__link">
-          <a href="#!">
-            <div class="SAInfo__btn">
-              Записаться на курс
-            </div>
-          </a>
+          <div class="SAInfo__btn">
+            Записаться на курс
+          </div>
         </div>
       </div>
     </div>
@@ -57,7 +55,14 @@
 </template>
 
 <script>
+import { insertBitrix1 } from '@/assets/js/bitrx-window-1.js'
 export default {
+  mounted () {
+    // Вставка popup от Bitrix на кнопку
+    try {
+      insertBitrix1('.SAInfo__link', '.SAInfo__btn')
+    } catch (error) {}
+  }
 }
 </script>
 
@@ -104,7 +109,7 @@ export default {
   background: #FAFF00;
   border-radius: 50px;
   padding: 15px 50px;
-
+  cursor: pointer;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;

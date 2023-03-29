@@ -24,8 +24,14 @@
 </template>
 
 <script>
+import { insertBitrix1 } from '@/assets/js/bitrx-window-1.js'
 export default {
-
+  mounted () {
+    // Вставка popup от Bitrix на кнопку
+    try {
+      insertBitrix1('.choose__left-side', '.choose_btn')
+    } catch (error) {}
+  }
 }
 </script>
 

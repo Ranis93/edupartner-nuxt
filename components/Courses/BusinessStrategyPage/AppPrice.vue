@@ -28,11 +28,9 @@
               100 000 ₽
             </div>
           </div>
-          <a href="#!">
-            <div class="BSPrice__btn1">
-              Записаться на курс
-            </div>
-          </a>
+          <div class="BSPrice__btn1">
+            Записаться на курс
+          </div>
         </div>
         <div class="BSPrice__box">
           <div class="BSPrice__window">
@@ -58,7 +56,14 @@
 </template>
 
 <script>
+import { insertBitrix1 } from '@/assets/js/bitrx-window-1.js'
 export default {
+  mounted () {
+    // Вставка popup от Bitrix на кнопку
+    try {
+      insertBitrix1('.BSPrice__info', '.BSPrice__btn1')
+    } catch (error) {}
+  }
 }
 </script>
 
@@ -135,6 +140,7 @@ export default {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  cursor: pointer;
 
   color: #1D1D1D;
   background: #FAFF00;
@@ -185,6 +191,7 @@ export default {
   background: #FAFF00;
   border-radius: 50px;
   padding: 15px 50px;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .BSPrice__box{

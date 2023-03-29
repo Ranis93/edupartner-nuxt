@@ -25,11 +25,9 @@
               35 000 ₽
             </div>
           </div>
-          <a href="#!">
-            <div class="SAPrice__btn1">
-              Записаться на курс
-            </div>
-          </a>
+          <div class="SAPrice__btn1">
+            Записаться на курс
+          </div>
         </div>
         <div class="SAPrice__box">
           <div class="SAPrice__window">
@@ -55,7 +53,14 @@
 </template>
 
 <script>
+import { insertBitrix1 } from '@/assets/js/bitrx-window-1.js'
 export default {
+  mounted () {
+    // Вставка popup от Bitrix на кнопку
+    try {
+      insertBitrix1('.SAPrice__info', '.SAPrice__btn1')
+    } catch (error) {}
+  }
 }
 </script>
 
@@ -132,7 +137,7 @@ export default {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-
+  cursor: pointer;
   color: #1D1D1D;
   background: #FAFF00;
   border-radius: 50px;
