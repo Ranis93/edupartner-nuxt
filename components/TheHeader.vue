@@ -210,6 +210,16 @@ export default {
       activeBurgerList: 0 // Текущий пункт бургер-меню
     }
   },
+  watch: {
+    burgerHide: function () {
+      // запрет на прокрутку, когда открыт бургер-меню
+      if (!this.burgerHide) {
+        document.documentElement.style.overflow = 'hidden'
+        return
+      }
+      document.documentElement.style.overflow = 'auto'
+    }
+  },
   methods: {
     burgerListShow () { // Показать списки под пуктами бургер-меню
       this.burgerMenuIsHide = false
@@ -243,7 +253,7 @@ export default {
   right: 0;
   background-color: #1E1F06;
   z-index: 10;
-  padding: 103px 0 0 20px;
+  padding: 103px 0 0 40px;
   transform: translateX(100%);
   transition: .2s all linear;
 }
@@ -289,7 +299,7 @@ export default {
 }
 .burger-link__ul{
   display: none;
-  margin-top: 5px;
+  margin: 5px 0 25px 0;
   z-index: 10;
   opacity: 0;
   animation: ani 2.5s forwards;

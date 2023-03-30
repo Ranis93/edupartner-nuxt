@@ -8,32 +8,33 @@
         <div class="Main__desc">
           Предлагаем комплекс мер по продвижению и увеличению прибыльности вашего сайта с помощью таких инструментов интернет-маркетинга, как SEO-оптимизация, контекстная реклама, таргетированая реклама, SMM, email-рассылка и множество других
         </div>
-        <a href="#!">
-          <div class="Main__btn">
-            Проконсультироваться
-          </div>
-        </a>
+        <div class="Main__btn">
+          Проконсультироваться
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import { insertBitrix3 } from '@/assets/js/bitrx-window.js'
 export default {
+  mounted () {
+    // Вставка popup от Bitrix на кнопку
+    try {
+      insertBitrix3('.Main__inner', '.Main__btn')
+    } catch (error) {}
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/scss/variables.scss';
 .Main {
-  @include bgcenter('../../../assets/images/control/site-development/bg.png');
+  @include bgcenter('../../../assets/images/control/internet-marketing/bg-marketing.png');
 }
 .Main__inner {
   padding: 230px 0 333px 0;
-  & > a{
-    display: block;
-    width: fit-content;
-  }
 }
 .Main__title{
   font-family: $ff1;
@@ -62,7 +63,8 @@ export default {
   font-size: 18px;
   line-height: 33px;
   color: rgba(29, 29, 29, 0.9);
-
+  width: fit-content;
+  cursor: pointer;
   padding: 10px 40px;
   background: #F9FF05;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);

@@ -8,18 +8,23 @@
         <div class="ItDevMain__desc">
           Разработаем и запустим сайт, отражающий концепцию вашего бизнеса и привлекающий целевую аудиторию. Подготовим индивидуальный дизайн сайта
         </div>
-        <a href="#!">
-          <div class="ItDevMain__btn">
-            Заказать сайт
-          </div>
-        </a>
+        <div class="ItDevMain__btn">
+          Заказать сайт
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import { insertBitrix2 } from '@/assets/js/bitrx-window.js'
 export default {
+  mounted () {
+    // Вставка popup от Bitrix на кнопку
+    try {
+      insertBitrix2('.ItDevMain__inner', '.ItDevMain__btn')
+    } catch (error) {}
+  }
 }
 </script>
 
@@ -30,10 +35,6 @@ export default {
 }
 .ItDevMain__inner {
   padding: 230px 0 333px 0;
-  & > a{
-    display: block;
-    width: fit-content;
-  }
 }
 .ItDevMain__title{
   font-family: $ff1;
@@ -62,7 +63,8 @@ export default {
   font-size: 18px;
   line-height: 33px;
   color: rgba(29, 29, 29, 0.9);
-
+  width: fit-content;
+  cursor: pointer;
   padding: 10px 40px;
   background: #F9FF05;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);

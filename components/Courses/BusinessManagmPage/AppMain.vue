@@ -251,6 +251,10 @@ export default {
   position: absolute;
   bottom: 0;
 }
+.BMMain__img img{
+  width: auto;
+  /* для Safari (iOS). Иначе изображение раястягивает */
+}
 .BMMain__img.first{
   height: 472px;
   right: 0;

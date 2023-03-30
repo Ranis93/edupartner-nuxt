@@ -75,7 +75,7 @@
             </li>
             <li>
               <div class="footer__link">
-                <a href="#!">Тел.:</a>
+                <a href="tel:+78001011945">Тел.: +7 (800)-101-19-45 </a>
               </div>
             </li>
             <li>
