@@ -66,7 +66,9 @@
           </ul>
         </div>
         <div class="footer__column col-4">
-          <a href="#!" class="footer__title"> Контакты </a>
+          <nuxt-link to="/contacts" class="footer__title">
+            Контакты
+          </nuxt-link>
           <ul class="footer__links">
             <li>
               <div class="footer__link">

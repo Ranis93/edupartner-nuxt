@@ -30,7 +30,7 @@
             О компании
           </nuxt-link>
           <nuxt-link
-            to="/"
+            to="/contacts"
             exact
           >
             Контакты
@@ -177,7 +177,7 @@
             :class="{active : activeBurgerList === 4}"
             @click="[burgerMenuHide(), (activeBurgerList = 4), (activeBurgerList = 0)]"
           >
-            <nuxt-link to="/" exact>
+            <nuxt-link to="/contacts" exact>
               Контакты
             </nuxt-link>
           </div>
