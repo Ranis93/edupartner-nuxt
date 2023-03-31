@@ -11,19 +11,15 @@ import AppMain from '~/components/Control/IntMarketingPage/AppMain.vue'
 import AppServDirections from '~/components/Control/IntMarketingPage/AppServDirections.vue'
 import AppChoose from '~/components/MainPage/AppChoose.vue'
 export default {
-  name: 'BusinessStrategyPage',
+  name: 'IntMarketingPage',
   components: { AppMain, AppServDirections, AppChoose },
   head () {
     return {
-      title: '',
+      title: 'Интернет-маркетинг по доступной цене в Уфе от компании EduPartner',
       meta: [
         {
           name: 'description',
-          content: ''
-        },
-        {
-          name: 'keywords',
-          content: ''
+          content: 'Интернет-маркетинг по доступной цене в Уфе. Услуги - SEO-оптимизация, контекстная реклама, таргетированая реклама, SMM, email-рассылка. Команда высококлассных специалистов. Поможем вашему бизнесу расти и развиваться! ⭐Бесплатная консультация. Звоните!☎ +7 (800)-101-19-45'
         }
       ]
     }

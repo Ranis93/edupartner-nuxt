@@ -36,46 +36,93 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
-.WhatIs__about{
-  max-width: 680px;
-}
-.WhatIs__title{
-  font-family: $ff1;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 50px;
-  color: #FFFFFF;
-  padding-bottom: 50px;
-}
-.WhatIs__text{
-  font-family: $ff2;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  &.WhatIs__text_yellow{
-    color: #FAFF00;
-    padding-bottom: 20px;
+  .WhatIs__about{
+    max-width: 680px;
   }
-}
-.WhatIs__img{
-  height: 287px;
-  width: auto;
+  .WhatIs__title{
+    font-family: $ff1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 50px;
+    color: #FFFFFF;
+    padding-bottom: 50px;
+  }
+  .WhatIs__text{
+    font-family: $ff2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    &.WhatIs__text_yellow{
+      color: #FAFF00;
+      padding-bottom: 20px;
+    }
+  }
+  .WhatIs__img{
+    height: 287px;
+    width: auto;
+  }
 }
 
 @media (max-width: 1024px) {
+  .WhatIs__columns{
+    .WhatIs__about{
+      max-width: 529px;
+    }
+    .WhatIs__img{
+      margin-top: 50px;
+      height: auto;
+      width: 307px;
+    }
+  }
 }
-
 @media (max-width: 768px) {
-
+  .WhatIs__columns{
+    padding-bottom: 76px;
+    .WhatIs__about{
+      max-width: 479px;
+    }
+    .WhatIs__img{
+      width: 229px;
+    }
+  }
 }
 @media (max-width: 480px) {
-
+  .WhatIs__columns{
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+    .WhatIs__about{
+      max-width: none;
+      .WhatIs__title{
+        line-height: 40px;
+        padding-bottom: 20px;
+      }
+    }
+    .WhatIs__img{
+      margin-top: 40px;
+      width: 319px;
+    }
+  }
 }
 @media (max-width: 360px) {
-
+  .WhatIs__columns{
+    .WhatIs__about{
+      .WhatIs__title{
+        font-size: 24px;
+        line-height: 35px;
+        padding-bottom: 30px;
+      }
+      .WhatIs__text{
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    .WhatIs__img{
+      margin-top: 94px;
+      width: 100%;
+    }
+  }
 }
 </style>

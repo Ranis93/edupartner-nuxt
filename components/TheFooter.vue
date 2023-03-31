@@ -41,7 +41,7 @@
             </li>
             <li>
               <nuxt-link to="/site-development" class="footer__link">
-                Разработка сайта
+                Разработка сайтов
               </nuxt-link>
             </li>
             <li>

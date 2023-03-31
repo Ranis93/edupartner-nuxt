@@ -9,13 +9,13 @@
           Больше, чем специалисты. Мы проводим отбор, и к работе приступает тот, кто прошёл испытания. С нами работают лучшие из лучших.
         </div>
         <div class="ServiceLines__cards">
-          <a href="#!">
+          <nuxt-link to="/internet-marketing/seo-promotion">
             <div class="ServiceLines__card seo">
               <div class="ServiceLines__text">
                 SEO-продвижение
               </div>
             </div>
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </div>

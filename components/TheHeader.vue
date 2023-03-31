@@ -150,7 +150,7 @@
                 to="/site-development"
                 @click="burgerListHide"
               >
-                Разработка сайта
+                Разработка сайтов
               </nuxt-link>
             </li>
             <li class="burger-link__li" @click="burgerMenuHide">
