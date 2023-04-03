@@ -274,16 +274,16 @@ export default {
   &>a{
     margin-bottom: 15px;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 26px;
+    line-height: 31px;
     color: #FFFFFF;
     text-decoration: none;
     width: fit-content;
   }
   margin-bottom: 15px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 26px;
+  line-height: 31px;
   color: #FFFFFF;
   text-decoration: none;
   width: fit-content;
@@ -314,8 +314,8 @@ export default {
 .burger-link__ul>li>a{
   text-decoration: none;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 20px;
+  line-height: 24px;
   color: #FFFFFF;
 }
 .header__nav-close {

@@ -47,8 +47,14 @@
 </template>
 
 <script>
+import { insertBitrix4 } from '@/assets/js/bitrx-window.js'
 export default {
-
+  mounted () {
+    // Вставка popup от Bitrix на кнопку
+    try {
+      insertBitrix4('.contacts__window', '.contacts__btn')
+    } catch (error) {}
+  }
 }
 </script>
 

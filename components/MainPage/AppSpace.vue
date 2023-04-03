@@ -61,12 +61,12 @@
 </template>
 
 <script>
-import { insertBitrix1 } from '@/assets/js/bitrx-window.js'
+import { insertBitrix4 } from '@/assets/js/bitrx-window.js'
 export default {
   mounted () {
     // Вставка popup от Bitrix на кнопку
     try {
-      insertBitrix1('.space__inner', '.space__btn')
+      insertBitrix4('.space__inner', '.space__btn')
     } catch (error) {}
   }
 }
