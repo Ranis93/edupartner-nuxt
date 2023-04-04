@@ -34,7 +34,9 @@
           <a href="#!" class="footer__title"> Управление </a>
           <ul class="footer__links">
             <li>
-              <a href="#!" class="footer__link"> Диагностика бизнеса </a>
+              <nuxt-link to="/business-diagnostics" class="footer__link">
+                Диагностика бизнеса
+              </nuxt-link>
             </li>
             <li>
               <a href="#!" class="footer__link"> Бизнес-консультация </a>
