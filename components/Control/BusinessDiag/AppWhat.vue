@@ -1,9 +1,43 @@
 <template>
-  <section class="ThisIs">
+  <section class="WhatIn">
     <div class="container">
-      <div class="ThisIs__inner">
-        <div class="ThisIs__text">
-          <span>Диагностика бизнеса</span> —  это анализ работы предприятия, выявление её слабых и сильных сторон. Диагностика помогает ответить на вопросы «Почему падает прибыль, о чем говорят цифры в отчётах?».
+      <div class="WhatIn__inner">
+        <div class="WhatIn__title">
+          ЧТО ВХОДИТ:
+        </div>
+        <div class="WhatIn__cards">
+          <div class="WhatIn__card">
+            <div class="WhatIn__img">
+              <img src="../../../assets/images/control/business-diag/what-cards/card-01.png" alt="cards-img">
+            </div>
+            <div class="WhatIn__about">
+              <div class="WhatIn__text">
+                1. Кадровый аудит
+              </div>
+              <div class="WhatIn__desc">
+                Индивидуальное собеседование каждого сотрудника (от уборщицы до директора) диагностика, выявление потенциала, лояльности, точки развития, склонность к конфликтам, рекомендации по управлению кадрами.
+              </div>
+              <div class="WhatIn__text">
+                2. Финансовая диагностика (без инвентаризации товаров)
+              </div>
+            </div>
+          </div>
+          <div class="WhatIn__card">
+            <div class="WhatIn__about">
+              <div class="WhatIn__text">
+                3. IT-диагностика
+              </div>
+              <div class="WhatIn__desc">
+                It-ресурсы компании, диагностика качества настройки/связки ит-ресурсов компании (сайт, @, соц.сети, рекламные компании, crm система), выявление наличия/отсутствия необходимых шагов для качественного привлечения клиентов в интернете, управляемость.
+              </div>
+              <div class="WhatIn__text">
+                4. Диагностика управленческого учета, включая продажи.
+              </div>
+            </div>
+            <div class="WhatIn__img">
+              <img src="../../../assets/images/control/business-diag/what-cards/card-02.png" alt="cards-img">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -17,28 +51,61 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/scss/variables.scss';
-.ThisIs{
-  background: {
-    color: #181816;
-    image: url('@/assets/images/control/business-diag/shedule-up.svg');
-    repeat : no-repeat;
-    size: 80% 80%;
-    position: 130% 110%;
-  };
+.WhatIn{
+  background-color: #FFFFFF;
 }
-.ThisIs__inner{
-  padding: 100px 0 266px 0;
-  .ThisIs__text{
+.WhatIn__inner{
+  padding: 100px 0;
+  .WhatIn__title{
     font-family: $ff1;
     font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 60px;
-    color: #FFFFFF;
-    span{
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+    padding-bottom: 91px;
+  }
+  .WhatIn__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 50px;
+    .WhatIn__card{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      justify-content: space-between;
+      column-gap: 20px;
+      width: 100%;
+      .WhatIn__img{
+        width: 479px;
+        height: auto;
+        border-radius: 50px;
+        img{
+          border-radius: 50px;
+        }
+      }
+      .WhatIn__about{
+        max-width: 580px;
+        .WhatIn__text{
+          font-family: $ff1;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 36px;
+          color: #000000;
+        }
+        .WhatIn__desc{
+          font-family: $ff2;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: #000000;
+          padding: 24px 0;
+        }
+      }
     }
   }
 }
