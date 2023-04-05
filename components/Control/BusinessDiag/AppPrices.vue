@@ -48,7 +48,7 @@
         <div class="Scoreboard">
           <div class="Scoreboard__cards">
             <div class="Scoreboard__card">
-              <div class="Scoreboard__hat">
+              <div class="Scoreboard__hat Scoreboard__hat_full">
                 <div class="Scoreboard__img">
                   <img src="../../../assets/images/control/business-diag/prices-cards/fire.svg" alt="card-img">
                 </div>
@@ -92,7 +92,10 @@
                 </div>
               </div>
             </div>
-            <div class="Scoreboard__card">
+            <div
+              v-if="filteredPricesByNumber.it.newPrice"
+              class="Scoreboard__card"
+            >
               <div class="Scoreboard__hat">
                 <div class="Scoreboard__img">
                   <img src="../../../assets/images/control/business-diag/prices-cards/mac.svg" alt="card-img">
@@ -429,6 +432,15 @@ export default {
   }
   .Prices__btngroup{
     margin-bottom: 50px;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    position: relative;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    &::-webkit-scrollbar { width: 0; height: 0; }
     .Prices__btn{
       font-family: $ff1;
       font-style: normal;
@@ -441,7 +453,7 @@ export default {
       background: #181816;
       border-radius: 50px;
       color: #FAFF00;
-      margin-right: 20px;
+      flex-shrink: 0;
       transition: all .25s;
       &.active-btn{
         color: #1D1D1D;
@@ -556,12 +568,133 @@ export default {
   }
 }
 @media (max-width: 1024px) {
+  .Prices__inner{
+    padding: 92px 0 84px 0;
+    .Prices__subtitle{
+      padding-bottom: 18px;
+    }
+    .Prices__btngroup{
+      column-gap: 15px;
+      margin-bottom: 75px;
+    }
+    .Scoreboard{
+      padding: 33px 56px 27px 44px;
+      .Scoreboard__cards{
+        .Scoreboard__card{
+          .Scoreboard__desc{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
 }
-
 @media (max-width: 768px) {
+  .Prices__inner{
+    padding: 92px 0 71px 0;
+    .Prices__title{
+      padding-bottom: 39px;
+    }
+    .Prices__subtitle{
+      padding-bottom: 10px;
+    }
+    .Prices__btngroup{
+      margin-bottom: 69px;
+    }
+    .Scoreboard{
+      padding: 33px 20px 27px 44px;
+    }
+  }
 }
 @media (max-width: 480px) {
+  .Prices__inner{
+    padding-bottom: 76px;
+    .Prices__title{
+      font-size: 28px;
+      line-height: 40px;
+      padding-bottom: 15px;
+    }
+    .Prices__subtitle{
+      line-height: 30px;
+    }
+    .Prices__btngroup{
+      margin-bottom: 90px;
+      column-gap: 10px;
+      .Prices__btn{
+        width: auto;
+        min-width: 160px;
+      }
+    }
+    .Scoreboard{
+      padding: 33px 20px 43px 22px;
+      .Scoreboard__cards{
+        row-gap: 35px;
+        .Scoreboard__card{
+          .Scoreboard__hat{
+            position: relative;
+            align-items: flex-start;
+            &.Scoreboard__hat_full{
+              padding-bottom: 30px;
+            }
+            .Scoreboard__img{
+              flex-shrink: 0;
+            }
+            .Scoreboard__text{
+              position: absolute;
+              bottom: -5px;
+              right: 0;
+            }
+          }
+        }
+      }
+      .Scoreboard__order-btn{
+        margin: 24px auto 0 auto;
+      }
+    }
+  }
 }
 @media (max-width: 360px) {
+  .Prices__inner{
+    padding: 65px 0 62px 0;
+    .Prices__title{
+      font-size: 24px;
+      line-height: 30px;
+      padding-bottom: 48px;
+    }
+    .Prices__subtitle{
+      font-size: 22px;
+      line-height: 30px;
+      padding-bottom: 25px;
+    }
+    .Prices__btngroup{
+      margin-bottom: 82px;
+    }
+    .Scoreboard{
+      padding: 27px 11px;
+      .Scoreboard__cards{
+        row-gap: 23px;
+        .Scoreboard__card{
+          .Scoreboard__hat{
+            &.Scoreboard__hat_full{
+              padding-bottom: 25px;
+            }
+            .Scoreboard__title{
+              font-size: 20px;
+            }
+            .Scoreboard__text{
+              font-size: 18px;
+              bottom: 0;
+            }
+          }
+          .Scoreboard__desc{
+            margin-top: 5px;
+          }
+        }
+      }
+      .Scoreboard__order-btn{
+        padding: 10px 27px;
+      }
+    }
+  }
 }
 </style>

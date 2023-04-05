@@ -87,7 +87,7 @@ export default {
   .BDiag__show{
     position: relative;
     .BDiag__window{
-      width: 480px;
+      max-width: 480px;
       height: auto;
     }
     .BDiag__btn2{
@@ -125,9 +125,107 @@ export default {
 }
 
 @media (max-width: 1024px) {
+  .BDiag__inner {
+    padding: 227px 0 185px 0;
+    .BDiag__about{
+      max-width: 444px;
+      .BDiag__title{
+        padding-bottom: 25px;
+      }
+      .BDiag__desc{
+        padding-bottom: 60px;
+      }
+    }
+    .BDiag__show{
+      .BDiag__window{
+        max-width: 480px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .BDiag__inner{
+    padding: 217px 0 202px 0;
+    column-gap: normal;
+    row-gap: 59px;
+    flex-wrap: wrap;
+    .BDiag__about{
+      max-width: none;
+      width: 100%;
+      .BDiag__title{
+        padding-bottom: 21px;
+      }
+      .BDiag__desc{
+        padding-bottom: 31px;
+      }
+    }
+    .BDiag__show{
+        margin: 0 auto;
+        padding: 0 96px;
+      .BDiag__btn2{
+        left: 96px;
+      }
+    }
+  }
 }
 @media (max-width: 480px) {
+  .BDiag__inner{
+    padding-bottom: 219px;
+    row-gap: 30px;
+    .BDiag__about{
+      .BDiag__title{
+        font-size: 35px;
+        line-height: 55px;
+      }
+      .BDiag__desc{
+        padding-bottom: 21px;
+      }
+    }
+    .BDiag__show{
+      padding: 0;
+      margin: 0;
+      .BDiag__window{
+        max-width: none;
+        width: 100%;
+      }
+      .BDiag__btn2{
+        left: auto;
+        right: 90px;
+        transform: translate(0, 70%);
+        .BDiag__text{
+          text-align: right;
+          padding-top: 40px;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 360px) {
+  .BDiag__inner{
+    padding-bottom: 216px;
+    row-gap: 45px;
+    .BDiag__about{
+      .BDiag__title{
+        font-size: 30px;
+        line-height: 30px;
+        padding-bottom: 16;
+      }
+      .BDiag__desc{
+        padding-bottom: 19px;
+      }
+    }
+    .BDiag__show{
+      .BDiag__btn2{
+        right: 70px;
+        .BDiag__text{
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .BDiag__arrow{
+          transform: translate(80%);
+        }
+      }
+    }
+  }
 }
 </style>

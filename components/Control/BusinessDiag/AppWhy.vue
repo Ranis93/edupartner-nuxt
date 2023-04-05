@@ -119,12 +119,108 @@ export default {
   }
 }
 @media (max-width: 1024px) {
+  .Why__inner{
+    padding: 61px 0 103px 0;
+    .Why__title{
+      padding-bottom: 26px;
+    }
+    .Why__columns{
+      .Why__window{
+        margin-top: 50px;
+        padding: 50px 28px 20px 29px;
+        min-height: 362px;
+        .Why__text{
+          font-size: 22px;
+          line-height: 33px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
 }
-
 @media (max-width: 768px) {
+  .Why__inner{
+    padding: 100px 0;
+    .Why__title{
+      padding-bottom: 47px;
+    }
+    .Why__columns{
+      column-gap: 20px;
+      .Why__cards{
+        max-width: none;
+        width: 49%;
+        .Why__card{
+          margin-bottom: 21px;
+          .Why__desc{
+            margin-top: 17px;
+          }
+        }
+      }
+      .Why__window{
+        max-width: none;
+        width: 49%;
+        margin-top: 65px;
+        padding: 45px 40px;
+        min-height: 310px;
+        .Why__text{
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 480px) {
+  .Why__inner{
+    .Why__title{
+      padding-bottom: 50;
+    }
+    .Why__columns{
+      column-gap: normal;
+      row-gap: 50px;
+      flex-wrap: wrap;
+      .Why__cards{
+        width: 100%;
+        .Why__card{
+          margin-bottom: 25px;
+          .Why__desc{
+            margin-top: 15px;
+          }
+        }
+      }
+      .Why__window{
+        padding: 35px 43px;
+        width: 100%;
+        margin-top: 0;
+        min-height: auto;
+      }
+    }
+  }
 }
 @media (max-width: 360px) {
+  .Why__inner{
+    .Why__title{
+      font-size: 24px;
+      line-height: 40px;
+    }
+    .Why__columns{
+      .Why__cards{
+        width: 100%;
+        .Why__card{
+          .Why__desc{
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+      }
+      .Why__window{
+        padding: 35px 31px;
+        .Why__text{
+          font-size: 18px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
 }
 </style>

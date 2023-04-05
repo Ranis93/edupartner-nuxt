@@ -43,12 +43,71 @@ export default {
   }
 }
 @media (max-width: 1024px) {
+  .ThisIs{
+    background-size: 80% 80%;
+    background-position: 100% 180%;
+  }
+  .ThisIs__inner{
+    padding: 182px 0 239px 0;
+    .ThisIs__text{
+      font-size: 28px;
+      line-height: 47px;
+      span{
+        font-size: 34px;
+        line-height: 24px;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
+  .ThisIs{
+    background-size: 100% 85%;
+    background-position: 130% 210%;
+  }
+  .ThisIs__inner{
+    padding: 122px 0 232px 0;
+    .ThisIs__text{
+      font-size: 26px;
+      line-height: 42px;
+      span{
+        font-size: 30px;
+        line-height: 24px;
+      }
+    }
+  }
 }
 @media (max-width: 480px) {
+  .ThisIs{
+    background-size: 100% 85%;
+    background-position: 150% 330%;
+  }
+  .ThisIs__inner{
+    padding-bottom: 108px;
+    .ThisIs__text{
+      font-size: 24px;
+      line-height: 38px;
+      span{
+        font-size: 28px;
+        line-height: 24px;
+      }
+    }
+  }
 }
 @media (max-width: 360px) {
+  .ThisIs{
+    background-position: 150% 280%;
+  }
+  .ThisIs__inner{
+    padding: 60px 0 120px 0;
+    .ThisIs__text{
+      font-size: 18px;
+      line-height: 29px;
+      span{
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
 }
 </style>

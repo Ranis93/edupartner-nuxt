@@ -110,12 +110,92 @@ export default {
   }
 }
 @media (max-width: 1024px) {
+  .WhatIn__inner{
+    padding: 51px 0 53px 0;
+    .WhatIn__title{
+      padding-bottom: 38px;
+    }
+    .WhatIn__cards{
+      row-gap: 24px;
+      .WhatIn__card{
+        .WhatIn__img{
+          width: 436px;
+          height: 320px;
+        }
+        .WhatIn__about{
+          max-width: 435px;
+          .WhatIn__desc{
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
 }
-
 @media (max-width: 768px) {
+  .WhatIn__inner{
+    padding: 42px 0 52px 0;
+    .WhatIn__cards{
+      row-gap: 35px;
+      .WhatIn__card{
+        column-gap: 10px;
+        .WhatIn__img{
+          width: 48%;
+        }
+        .WhatIn__about{
+          width: 48%;
+          .WhatIn__text{
+            font-size: 22px;
+            line-height: 33px;
+          }
+          .WhatIn__desc{
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 480px) {
+  .WhatIn__inner{
+    padding: 69px 0 57px 0;
+    .WhatIn__title{
+      padding-bottom: 31px;
+    }
+    .WhatIn__cards{
+      row-gap: 20px;
+      .WhatIn__card{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        &:first-child{
+          flex-direction: column-reverse;
+        }
+        .WhatIn__img{
+          width: 100%;
+        }
+        .WhatIn__about{
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 360px) {
+  .WhatIn__inner{
+    padding: 51px 0 48px 0;
+    .WhatIn__title{
+      font-size: 24px;
+      line-height: 29px;
+      padding-bottom: 36px;
+    }
+    .WhatIn__cards{
+      .WhatIn__card{
+        .WhatIn__img{
+          height: 220px;
+        }
+      }
+    }
+  }
 }
 </style>
