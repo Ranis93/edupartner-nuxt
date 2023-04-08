@@ -35,7 +35,13 @@
 </template>
 
 <script>
+import { insertBitrix5 } from '~/assets/js/bitrx-window'
 export default {
+  mounted () {
+    try {
+      insertBitrix5('.BDiag__about', '.BDiag__btn')
+    } catch (error) {}
+  }
 }
 </script>
 
@@ -82,6 +88,9 @@ export default {
       border-radius: 50px;
       padding: 10px 40px;
       width: fit-content;
+      &:hover{
+        cursor: pointer;
+      }
     }
   }
   .BDiag__show{
@@ -123,7 +132,6 @@ export default {
     }
   }
 }
-
 @media (max-width: 1024px) {
   .BDiag__inner {
     padding: 227px 0 185px 0;

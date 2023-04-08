@@ -22,8 +22,7 @@ export default {
     color: #181816;
     image: url('@/assets/images/control/business-diag/shedule-up.svg');
     repeat : no-repeat;
-    size: 80% 80%;
-    position: 130% 110%;
+    position: bottom 0  right 0;
   };
 }
 .ThisIs__inner{
@@ -59,7 +58,6 @@ export default {
     }
   }
 }
-
 @media (max-width: 768px) {
   .ThisIs{
     background-size: 100% 85%;

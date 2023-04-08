@@ -9,7 +9,7 @@
           Существуют разные типы сайтов и в зависимости от поставленных задач, выбирается определенный тип сайта, который будет работать и приносить прибыль.
         </div>
         <div class="ServiceLines__cards">
-          <nuxt-link to="/">
+          <nuxt-link to="/site-development/landing-page">
             <div class="ServiceLines__card landing">
               <div class="ServiceLines__text">
                 Landing page
@@ -101,6 +101,12 @@ export default {
 
 .ServiceLines__card.graph{
   background-image: url('../../../assets/images/control/site-development/cards/graphs.png');
+}
+.ServiceLines__card.coorp{
+  background-image: url('../../../assets/images/control/site-development/cards/devices.png');
+}
+.ServiceLines__card.internet{
+  background-image: url('../../../assets/images/control/site-development/cards/shoping.png');
 }
 .ServiceLines__card:hover{
   transform: scale(1.01);

@@ -45,7 +45,7 @@
             От 21 до 30
           </button>
         </div>
-        <div class="Scoreboard">
+        <div class="Scoreboard Scoreboard_one">
           <div class="Scoreboard__cards">
             <div class="Scoreboard__card">
               <div class="Scoreboard__hat Scoreboard__hat_full">
@@ -154,7 +154,7 @@
             От 10 до 20 млн
           </button>
         </div>
-        <div class="Scoreboard">
+        <div class="Scoreboard Scoreboard_two">
           <div class="Scoreboard__cards">
             <div class="Scoreboard__card">
               <div class="Scoreboard__hat">
@@ -209,6 +209,7 @@
 </template>
 
 <script>
+import { insertBitrix5 } from '~/assets/js/bitrx-window'
 export default {
   data () {
     return {
@@ -390,6 +391,14 @@ export default {
       ]
     }
   },
+  mounted () {
+    try {
+      insertBitrix5('.Scoreboard_one', '.Scoreboard__order-btn')
+    } catch (error) {}
+    try {
+      insertBitrix5('.Scoreboard_two', '.Scoreboard__order-btn')
+    } catch (error) {}
+  },
   methods: {
     selectPeople (num) {
       this.numberOfPeople = num
@@ -441,6 +450,7 @@ export default {
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
     &::-webkit-scrollbar { width: 0; height: 0; }
+    padding: 3px 5px;
     .Prices__btn{
       font-family: $ff1;
       font-style: normal;
