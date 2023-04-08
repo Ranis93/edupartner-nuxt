@@ -81,6 +81,7 @@ export default {
       border-top: 2px solid #FAFF00;
       padding: 10px 0 0 20px;
       position: relative;
+      flex-shrink: 0;
       &::before{
         content: '';
         background: #FAFF00;
@@ -129,12 +130,102 @@ export default {
   }
 }
 @media (max-width: 1024px) {
+  .Stages__inner{
+    padding-bottom: 36px;
+    .Stages__title{
+      padding-bottom: 29px;
+    }
+    .Stages__cards{
+      .Stages__card{
+        .Stages__text{
+          font-size: 18px;
+          line-height: 25px;
+        }
+        .Stages__desc{
+          font-size: 16px;
+          line-height: 21px;
+        }
+        &.Stages__card_one{
+          width: 198px;
+          height: 183px;
+        }
+        &.Stages__card_two{
+          width: 219px;
+          height: 247px;
+        }
+        &.Stages__card_three{
+          width: 217px;
+          height: 311px;
+        }
+        &.Stages__card_four{
+          width: 300px;
+          height: 375px;
+        }
+      }
+    }
+  }
 }
-
 @media (max-width: 768px) {
+  .Stages__inner{
+    padding-bottom: 50px;
+    .Stages__title{
+      padding-bottom: 28px;
+    }
+    .Stages__cards{
+      .Stages__card{
+        &.Stages__card_one{
+          width: 229px;
+          height: 158px;
+        }
+        &.Stages__card_two{
+          width: 252px;
+          height: 222px;
+        }
+        &.Stages__card_three{
+          width: 249px;
+          height: 286px;
+        }
+        &.Stages__card_four{
+          width: 300px;
+          height: 349px;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 480px) {
+  .Stages__inner{
+    .Stages__cards{
+      .Stages__card{
+        &.Stages__card_one{
+          width: 210px;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 360px) {
+  .Stages__inner{
+    .Stages__cards{
+      .Stages__card{
+        &.Stages__card_one{
+          width: 150px;
+          height: 225px;
+        }
+        &.Stages__card_two{
+          width: 170px;
+          height: 290px;
+        }
+        &.Stages__card_three{
+          width: 213px;
+          height: 356px;
+        }
+        &.Stages__card_four{
+          width: 213px;
+          height: 420px;
+        }
+      }
+    }
+  }
 }
 </style>

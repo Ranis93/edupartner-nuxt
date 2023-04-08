@@ -40,7 +40,14 @@ export default {
   64%  { transform: scale(1,1)      translateY(0); }
   100% { transform: scale(1,1)      translateY(0); }
 }
-
+@keyframes bounce-2 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-80px); }
+  100% { transform: translateY(0); }
+}
+.Main{
+  background: #1D1D1D;
+}
 .Main__inner {
   padding: 230px 0 155px 0;
   display: flex;
@@ -91,15 +98,65 @@ export default {
       animation-iteration-count: infinite;
       margin: 0 auto 0 auto;
       transform-origin: bottom;
-      animation-name: bounce-6;
+
+      animation-name: bounce-2;
       animation-timing-function: ease;
     }
   }
 }
 @media (max-width: 1024px) {
+  .Main__inner{
+    column-gap: 20px;
+    padding-bottom: 180px;
+    .Main__animation{
+      max-width: 524px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Main__inner{
+    padding-bottom: 285px;
+    column-gap: 0;
+    .Main__about{
+      max-width: 356px;
+      .Main__title{
+        font-size: 40px;
+        line-height: 55px;
+      }
+    }
+    .Main__animation{
+      max-width: 332px;
+    }
+  }
 }
 @media (max-width: 480px) {
+  .Main__inner{
+    padding-bottom: 81px;
+    flex-wrap: wrap;
+    row-gap: 90px;
+    .Main__about{
+      .Main__title{
+        font-size: 36px;
+        line-height: 55px;
+      }
+    }
+    .Main__animation{
+      max-width: none;
+    }
+  }
 }
 @media (max-width: 360px) {
+  .Main__inner{
+    padding-bottom: 80px;
+    .Main__about{
+      .Main__title{
+        font-size: 32px;
+      }
+      .Main__btn{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }
 </style>

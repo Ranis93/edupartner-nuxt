@@ -6,7 +6,7 @@
           Если нет сайта, рекомендуем:
         </div>
         <div class="Reccomend__cards">
-          <nuxt-link to="/site-development">
+          <nuxt-link to="/internet-marketing/seo-promotion">
             <div class="Reccomend__card dev">
               <div class="Reccomend__text">
                 SEO-продвижение

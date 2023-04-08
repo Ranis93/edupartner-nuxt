@@ -6,7 +6,6 @@
     <AppTrust />
     <AppTeam />
     <AppReccomend />
-    <AppAdvice />
     <AppChoose />
   </div>
 </template>
@@ -18,11 +17,10 @@ import AppTrust from '~/components/Control/LandingPagePage/AppTrust.vue'
 import AppStages from '~/components/Control/LandingPagePage/AppStages.vue'
 import AppTeam from '~/components/Control/LandingPagePage/AppTeam.vue'
 import AppReccomend from '~/components/Control/LandingPagePage/AppReccomend.vue'
-import AppAdvice from '~/components/Control/LandingPagePage/AppAdvice.vue'
 import AppChoose from '~/components/MainPage/AppChoose.vue'
 export default {
   name: 'LandingPagePage',
-  components: { AppMain, AppWhatIs, AppTrust, AppStages, AppTeam, AppReccomend, AppAdvice, AppChoose },
+  components: { AppMain, AppWhatIs, AppTrust, AppStages, AppTeam, AppReccomend, AppChoose },
   head () {
     return {
       title: 'Разработка лендинга (landing page) по доступной цене в Уфе от компании EduPartner',

@@ -59,7 +59,7 @@
           </div>
           <div class="WhatIs__prices">
             <div class="WhatIs__new-price">
-              от 40 000 ₽
+              от 40 000 ₽/мес
             </div>
             <div class="WhatIs__old-price">
               от 60 000 ₽
@@ -110,6 +110,7 @@ export default {
     }
   }
   .WhatIs__col{
+    padding-top: 91px;
     .WhatIs__cards{
       display: flex;
       justify-content: space-between;
@@ -189,15 +190,93 @@ export default {
 }
 
 @media (max-width: 1024px) {
-
+  .WhatIs__columns{
+    .WhatIs__about{
+      max-width: 416px;
+    }
+    .WhatIs__col{
+      max-width: 416px;
+      .WhatIs__cards{
+        .WhatIs__card{
+          .WhatIs__subtitle{
+            font-size: 18px;
+            line-height: 30px;
+          }
+          .WhatIs__text{
+            font-size: 16px;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
-
+  .WhatIs__columns{
+    flex-wrap: wrap;
+    row-gap: 39px;
+    .WhatIs__about{
+      max-width: 100%;
+    }
+    .WhatIs__col{
+      padding-top: 0;
+      max-width: none;
+      width: 100%;
+      .WhatIs__cards{
+        max-width: none;
+      }
+    }
+  }
 }
 @media (max-width: 480px) {
-
+  .WhatIs__columns{
+    .WhatIs__about{
+      .WhatIs__title{
+        font-size: 32px;
+        padding-bottom: 20px;
+      }
+      .WhatIs__desc{
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+    .WhatIs__col{
+      .WhatIs__cards{
+        .WhatIs__card{
+          width: 47%;
+        }
+      }
+      .WhatIs__prices{
+        position: relative;
+        .WhatIs__old-price{
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 360px) {
-
+  .WhatIs__columns{
+    row-gap: 56px;
+    .WhatIs__col{
+      .WhatIs__cards{
+        column-gap: normal;
+        row-gap: 35px;
+        .WhatIs__card{
+          width: 100%;
+          .WhatIs__subtitle{
+            line-height: 25px;
+          }
+        }
+      }
+      .WhatIs__prices{
+        .WhatIs__new-price{
+          font-size: 32px;
+        }
+      }
+    }
+  }
 }
 </style>
