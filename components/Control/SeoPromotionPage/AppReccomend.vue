@@ -58,6 +58,9 @@ export default {
       background-size: contain;
       &.dev {
         background-image: url('../../../assets/images/control/seo-promotion/reccomend-cards/it-dev.png');
+        background-position: center;
+        background-size: cover;
+        border-radius: 50px;
       }
       &:hover {
         transform: scale(1.01);
@@ -87,7 +90,6 @@ export default {
     }
   }
 }
-
 @media (max-width: 1024px) {
   .Reccomend__inner{
     .Reccomend__cards{
@@ -116,7 +118,4 @@ export default {
     }
   }
 }
-
-@media (max-width: 360px) {}
-
 </style>

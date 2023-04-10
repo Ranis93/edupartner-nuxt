@@ -59,7 +59,7 @@
           </div>
           <div class="WhatIs__prices">
             <div class="WhatIs__new-price">
-              от 40 000 ₽/мес
+              от 40 000 ₽
             </div>
             <div class="WhatIs__old-price">
               от 60 000 ₽
