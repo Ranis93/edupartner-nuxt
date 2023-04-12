@@ -138,7 +138,7 @@
             <li class="burger-link__li" @click="burgerMenuHide">
               <nuxt-link
                 exact
-                to="/"
+                to="/business-consulting"
                 @click="burgerListHide"
               >
                 Бизнес-консультация

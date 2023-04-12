@@ -3,7 +3,7 @@
     <div class="container">
       <div class="Reccomend__inner">
         <div class="Reccomend__title">
-          Если нет сайта, рекомендуем:
+          Если уже есть сайт, рекомендуем:
         </div>
         <div class="Reccomend__cards">
           <nuxt-link to="/internet-marketing/seo-promotion">

@@ -39,7 +39,9 @@
               </nuxt-link>
             </li>
             <li>
-              <a href="#!" class="footer__link"> Бизнес-консультация </a>
+              <nuxt-link to="/business-consulting" class="footer__link">
+                Бизнес-консультация
+              </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/site-development" class="footer__link">
